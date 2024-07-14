@@ -1,0 +1,47 @@
+{
+    "name": "fp-data-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "deploy": "wrangler deploy",
+        "dev": "wrangler dev",
+        "start": "wrangler dev",
+        "test": "vitest",
+        "cf-typegen": "wrangler types",
+        "migrate": "prisma migrate dev",
+        "postmigrate": "npx @snaplet/seed --config prisma/seed/seed.config.ts sync",
+        "seed": "ts-node prisma/seed.ts"
+    },
+    "author": "Matt Connors",
+    "license": "ISC",
+    "dependencies": {
+        "@envelop/graphql-jit": "^8.0.3",
+        "@escape.tech/graphql-armor-cost-limit": "^2.2.0",
+        "@escape.tech/graphql-armor-max-aliases": "^2.5.0",
+        "@escape.tech/graphql-armor-max-depth": "^2.3.0",
+        "@escape.tech/graphql-armor-max-directives": "^2.2.0",
+        "@escape.tech/graphql-armor-max-tokens": "^2.4.0",
+        "@graphql-yoga/plugin-csrf-prevention": "^3.6.0",
+        "@graphql-yoga/plugin-defer-stream": "^3.6.0",
+        "@graphql-yoga/plugin-jwt": "^2.6.0",
+        "@graphql-yoga/plugin-response-cache": "^3.8.0",
+        "@pothos/core": "^4.0.2",
+        "@prisma/client": "^5.16.2",
+        "graphql-yoga": "^5.6.0",
+        "kysely": "^0.27.4",
+        "pg": "^8.12.0"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20240712.0",
+        "@snaplet/copycat": "^5.0.0",
+        "@snaplet/seed": "^0.97.20",
+        "@types/node": "^20.14.10",
+        "@types/pg": "^8.11.6",
+        "prisma": "^5.16.2",
+        "prisma-kysely": "^1.8.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.3",
+        "wrangler": "^3.64.0"
+    }
+}
