@@ -56,8 +56,8 @@ model UserRole {
 // Endpoints model
 
 model Endpoints {
-    endpoint            String       @id
-    requiredPermissions Permission[]
+    endpoint    String       @id
+    permissions Permission[]
 }
 
 // Data-related models

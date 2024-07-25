@@ -7,15 +7,18 @@
 import { createSeedClient } from "@snaplet/seed";
 import { copycat, faker } from '@snaplet/copycat'
 
-const endpoints = [
-    '/test'
+const _endpoints = [
+    '/test-a',
+    '/test-b',
 ];
 
-const permissions = [
-    'test'
+const _permissions = [
+    'test',
+    'test2',
+    'test3',
 ];
 
-const roles = [
+const _roles = [
     'admin',
     'user'
 ];
@@ -43,25 +46,25 @@ const main = async () => {
     /**
      * Permissions
      */
-    const { permission } = await seed.permission(x => x(permissions.length, ({ index }) => ({
-        permission: permissions[index],
-        description: faker.lorem.sentence(),
+    const { permission } = await seed.permission(x => x(_permissions.length, ({ index }) => ({
+        description: _permissions[index],
         action: copycat.oneOfString(Math.random(), ["VIEW", "EDIT", "DELETE", "CREATE", "MANAGE"]) as "VIEW" | "EDIT" | "DELETE" | "CREATE" | "MANAGE",
-        _EndpointsToPermission: (x) => x(endpoints.length, ({ index }) => ({
-            /**
-             * Endpoints
-             */
-            Endpoints: {
-                endpoint: endpoints[index]
-            }
-        })),
     })));
+
+    /**
+     * Endpoints
+     */
+    const { endpoints } = await seed.endpoints(x => x(_endpoints.length, ({ index }) => ({
+        endpoint: _endpoints[index] as unknown as string,
+        _EndpointsToPermission: (x) => x({ min: 1, max: 3 })
+    })), { connect: { permission } });
 
     /**
      * Roles
      */
-    const { role } = await seed.role(x => x(roles.length, ({ index }) => ({
-        roleName: roles[index],
+    const { role } = await seed.role(x => x(_roles.length, ({ index }) => ({
+        roleName: _roles[index],
+        _PermissionToRole: (x) => x({ min: 1, max: 3 })
     })), { connect: { permission } });
 
     /**
