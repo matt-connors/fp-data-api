@@ -14,7 +14,7 @@ import { schema } from './schema';
 import { createContext } from "./context";
 
 export interface Env {
-    HYPERDRIVE: Hyperdrive;
+    "fitness-db": Hyperdrive;
 }
 
 const logger = createLogger('debug');
@@ -81,7 +81,7 @@ const yoga = createYoga<Env>({
 
 export default {
     async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-        const context = createContext(env.HYPERDRIVE.connectionString);
+        const context = createContext(env["fitness-db"].connectionString);
         const response = await yoga(request, { ...env, ...context });
         await context.db.destroy();
         return response;

@@ -1,7 +1,8 @@
 import { ExpressionBuilder } from 'kysely'
 import { jsonArrayFrom, jsonObjectFrom } from 'kysely/helpers/postgres'
 import { builder } from '../../builder'
-import { ProjectType, BusinessType } from '../../models'
+
+import { TrainerType, UserType, EndpointType } from '../../models'
 
 import { executeQuery } from '../utils'
 import { DB } from '../../types'
@@ -9,135 +10,67 @@ import { DB } from '../../types'
 // https://pothos-graphql.dev/docs/guide/objects
 // https://kysely.dev/docs/examples/INSERT/returning-data
 
-
-
 // See https://kysely.dev/docs/recipes/relations
-const withBusiness = (eb: ExpressionBuilder<DB, 'Project'>) => jsonObjectFrom(
-    eb.selectFrom('Business')
-        .selectAll()
-        .whereRef('Business.id', '=', 'Project.businessId')
-).as('business');
 
-const withPages = (eb: ExpressionBuilder<DB, 'Project'>) => jsonArrayFrom(
-    eb.selectFrom('Page')
+/**
+ * One-to-many relation between Trainer and User
+ */
+const withUsers = (eb: ExpressionBuilder<DB, 'Trainer'>) => jsonArrayFrom(
+    eb.selectFrom('User')
         .selectAll()
-        .whereRef('Page.projectId', '=', 'Project.id')
-).as('pages');
+        .whereRef('User.trainerId', '=', 'Trainer.id')
+).as('users');
 
+/**
+ * Many-to-many relation between Endpoints and Permission
+ */
+const withPermission = (eb: ExpressionBuilder<DB, 'Endpoints'>) => jsonArrayFrom(
+    eb.selectFrom('Permission')
+        .select([
+            'Permission.id',
+            'Permission.description',
+            'Permission.action'
+        ])
+        .innerJoin('_EndpointsToPermission', 'Permission.id', '_EndpointsToPermission.B')
+        .whereRef('_EndpointsToPermission.A', '=', 'Endpoints.endpoint')
+).as('permissions');
+
+/**
+ * Query type
+ */
 builder.queryType({
     fields: (t) => ({
         /**
-         * TEMP: Get all projects
+         * TEMP: Get all trainers
          */
-        projects: t.field({
-            type: [ProjectType],
+        trainers: t.field({
+            type: [TrainerType],
             nullable: true,
             resolve: executeQuery((db, { id }) => db
-                .selectFrom('Project')
+                .selectFrom('Trainer')
                 .selectAll()
-                .select(withBusiness)
+                .select(withUsers)
                 .execute()
             )
         }),
         /**
-         * Get a specific project by id
+         * Get permissions associated with an endpoint
          */
-        project: t.field({
-            type: ProjectType,
+        endpoint: t.field({
+            type: EndpointType,
             args: {
-                id: t.arg.string({ required: true }),
+                endpoint: t.arg.string({ required: true }),
             },
-            nullable: true,
-            resolve: executeQuery((db, { id }) => db
-                .selectFrom('Project')
+            resolve: executeQuery((db, { endpoint }) => db
+                .selectFrom('Endpoints')
                 .selectAll()
-                .where('id', '=', id)
-                .select((eb: ExpressionBuilder<DB, 'Project'>) => [
-                    withBusiness(eb),
-                    withPages(eb),
-                ])
+                .where('endpoint', '=', endpoint)
+                .select(withPermission)
                 .executeTakeFirst()
             )
         }),
-        /**
-         * TEMP: Get all businesses
-         */
-        businesses: t.field({
-            type: [BusinessType],
-            nullable: true,
-            resolve: executeQuery(db => db
-                .selectFrom('Business')
-                .selectAll()
-                .execute()
-            )
-        }),
-        /**
-         * Get a specific business by id
-         */
-        business: t.field({
-            type: BusinessType,
-            args: {
-                id: t.arg.int({ required: true }),
-            },
-            nullable: true,
-            resolve: executeQuery((db, { id }) => db
-                .selectFrom('Business')
-                .selectAll()
-                .where('id', '=', id)
-                .executeTakeFirst()
-            )
-        }),
-
-
-
-        die: t.field({
-            type: RandomDie,
-            args: {
-                numSides: t.arg.int({ required: true }),
-            },
-            nullable: true,
-            resolve: (_root, { numSides }) => new RandomDie(numSides)
-        })
     })
 })
-
-
-class RandomDie {
-
-    numSides: number;
-
-    constructor(numSides: number) {
-        this.numSides = numSides
-    }
-
-    rollOnce() {
-        return 1 + Math.floor(Math.random() * this.numSides)
-    }
-
-    roll({ numRolls }: { numRolls: number }) {
-        var output = []
-        for (var i = 0; i < numRolls; i++) {
-            output.push(this.rollOnce())
-        }
-        return output
-    }
-}
-
-builder.objectType(RandomDie, {
-    name: 'RandomDie',
-    fields: (t) => ({
-        numSides: t.exposeInt('numSides'),
-        rollOnce: t.int({
-            resolve: (parent) => parent.rollOnce()
-        }),
-        roll: t.intList({
-            args: {
-                numRolls: t.arg.int({ required: true })
-            },
-            resolve: (parent, { numRolls }) => parent.roll({ numRolls })
-        })
-    })
-});
 
 // see https://pothos-graphql.dev/docs/plugins/smart-subscriptions for subscriptions
 // see https://pothos-graphql.dev/docs/plugins/scope-auth for auth

@@ -15,12 +15,17 @@ export enum PermissionAction {
     MANAGE = 'MANAGE',
 }
 
+builder.enumType(PermissionAction, {
+    name: 'PermissionAction',
+    description: 'The action that a permission allows',
+});
+
 PermissionType.implement({
     fields: (t) => ({
         id: t.exposeID('id'),
         action: t.expose('action', { type: PermissionAction }),
         description: t.expose('description', { type: 'String' }),
-        roels: t.expose('roles', { type: [RoleType] }),
+        roles: t.expose('roles', { type: [RoleType] }),
         endpoints: t.expose('endpoints', { type: [EndpointType] }),
     }),
 
