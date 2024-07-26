@@ -13,8 +13,11 @@ import { maxTokensPlugin } from '@escape.tech/graphql-armor-max-tokens'
 import { schema } from './schema';
 import { createContext } from "./context";
 
+import { getUserPermissions } from './resolvers/User/query';
+
 export interface Env {
     "fitness-db": Hyperdrive;
+    "db": any;
 }
 
 const logger = createLogger('debug');
@@ -76,13 +79,31 @@ const yoga = createYoga<Env>({
     //     maxAge: 86400,
     // },
     logging: logger,
-    schema
+    schema,
+    context: async (context) => {
+        const userId = context.request.headers.get('X-User-Id');
+        if (!userId) {
+            return context;
+        }
+        const permissions = await getUserPermissions('1', context.db);
+        console.log('(permissions) --->', permissions);
+        if (!permissions) {
+            return context;
+        }
+        return {
+            ...context,
+            permissions,
+        };
+    }
 })
 
 export default {
     async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
         const context = createContext(env["fitness-db"].connectionString);
-        const response = await yoga(request, { ...env, ...context });
+        const response = await yoga(request, {
+            ...env,
+            ...context,
+        });
         await context.db.destroy();
         return response;
     },

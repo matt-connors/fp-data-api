@@ -1,20 +1,6 @@
 [
   {
     "schemaName": "public",
-    "tableName": "Endpoints",
-    "predictions": [
-      {
-        "input": "public endpoints endpoint",
-        "column": "endpoint",
-        "shape": "INTERNET_DOMAIN_NAME",
-        "confidence": 0.4532873332500458,
-        "context": "GENERAL",
-        "confidenceContext": 0
-      }
-    ]
-  },
-  {
-    "schemaName": "public",
     "tableName": "Permission",
     "predictions": [
       {

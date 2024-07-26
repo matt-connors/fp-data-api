@@ -14,6 +14,9 @@
 **Dev** - Drops the database/schema and reapplies all migrations:\
 ```npx prisma migrate reset --force```
 
+**Dev** - Update the state of the database to match the Prisma schema:\
+```npx prisma db push```
+
 **Prod** - Deploy changes to the database (usually automated in CI/CD pipeline):\
 ```npx prisma migrate deploy```
 
@@ -21,3 +24,6 @@
 
 **Dev** - Seed the database with test data:\
 ```npx prisma db seed```
+
+**Dev** - Sync the snaplet schema with the database:\
+```npx @snaplet/seed sync```

@@ -4,18 +4,17 @@
  * Use any TypeScript runner to run this script, for example: `npx tsx seed.ts`
  * Learn more about the Seed Client by following our guide: https://docs.snaplet.dev/seed/getting-started
  */
-import { createSeedClient } from "@snaplet/seed";
+import { type ResourceEnum, PermissionActionEnum, createSeedClient } from "@snaplet/seed";
 import { copycat, faker } from '@snaplet/copycat'
 
-const _endpoints = [
-    '/test-a',
-    '/test-b',
-];
+// const _endpoints = [
+//     '/test-a',
+//     '/test-b',
+// ];
 
 const _permissions = [
-    'test',
-    'test2',
-    'test3',
+    'TEST',
+    'TEST2',
 ];
 
 const _roles = [
@@ -46,30 +45,26 @@ const main = async () => {
     /**
      * Permissions
      */
+    console.log('Seeding permissions...');
     const { permission } = await seed.permission(x => x(_permissions.length, ({ index }) => ({
-        description: _permissions[index],
-        action: copycat.oneOfString(Math.random(), ["VIEW", "EDIT", "DELETE", "CREATE", "MANAGE"]) as "VIEW" | "EDIT" | "DELETE" | "CREATE" | "MANAGE",
+        description: copycat.sentence(index),
+        action: "VIEW" as PermissionActionEnum, // copycat.oneOfString(Math.random(), ["VIEW", "EDIT", "DELETE", "CREATE", "MANAGE"])
+        resource: _permissions[index] as ResourceEnum
     })));
-
-    /**
-     * Endpoints
-     */
-    const { endpoints } = await seed.endpoints(x => x(_endpoints.length, ({ index }) => ({
-        endpoint: _endpoints[index] as unknown as string,
-        _EndpointsToPermission: (x) => x({ min: 1, max: 3 })
-    })), { connect: { permission } });
 
     /**
      * Roles
      */
+    console.log('Seeding roles...');
     const { role } = await seed.role(x => x(_roles.length, ({ index }) => ({
         roleName: _roles[index],
-        _PermissionToRole: (x) => x({ min: 1, max: 3 })
+        _PermissionToRole: (x) => x({ min: 1, max: _permissions.length })
     })), { connect: { permission } });
 
     /**
      * Trainers
      */
+    console.log('Seeding trainers...');
     await seed.trainer(x => x(3, () => ({
         /**
          * Users

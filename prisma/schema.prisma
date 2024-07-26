@@ -24,6 +24,11 @@ enum PermissionAction {
     MANAGE
 }
 
+enum Resource {
+    TEST
+    TEST2
+}
+
 // Auth-related models
 
 model Role {
@@ -37,10 +42,11 @@ model Permission {
     id          Int              @id @default(autoincrement())
     description String
     action      PermissionAction
+    resource    Resource
     roles       Role[] // Many-to-many relation
-    endpoints   Endpoints[]
+    // endpoints   Endpoints[]
 
-    @@unique([action, description])
+    @@unique([action, resource])
 }
 
 model UserRole {
@@ -55,10 +61,10 @@ model UserRole {
 
 // Endpoints model
 
-model Endpoints {
-    endpoint    String       @id
-    permissions Permission[]
-}
+// model Endpoints {
+//     endpoint    String       @id
+//     permissions Permission[]
+// }
 
 // Data-related models
 

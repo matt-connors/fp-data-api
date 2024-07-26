@@ -12,17 +12,16 @@ export const PermissionAction = {
     MANAGE: "MANAGE"
 } as const;
 export type PermissionAction = (typeof PermissionAction)[keyof typeof PermissionAction];
-export type Endpoints = {
-    endpoint: string;
-};
-export type EndpointsToPermission = {
-    A: string;
-    B: number;
-};
+export const Resource = {
+    TEST: "TEST",
+    TEST2: "TEST2"
+} as const;
+export type Resource = (typeof Resource)[keyof typeof Resource];
 export type Permission = {
     id: Generated<number>;
     description: string;
     action: PermissionAction;
+    resource: Resource;
 };
 export type PermissionToRole = {
     A: number;
@@ -46,9 +45,7 @@ export type UserRole = {
     roleId: number;
 };
 export type DB = {
-    _EndpointsToPermission: EndpointsToPermission;
     _PermissionToRole: PermissionToRole;
-    Endpoints: Endpoints;
     Permission: Permission;
     Role: Role;
     Trainer: Trainer;

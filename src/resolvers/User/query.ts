@@ -1,10 +1,10 @@
 import { ExpressionBuilder } from 'kysely'
 import { jsonArrayFrom, jsonObjectFrom } from 'kysely/helpers/postgres'
-import { builder } from '../../builder'
+import { Resource, builder } from '../../builder'
 
 import { TrainerType, UserType, EndpointType } from '../../models'
 
-import { executeQuery } from '../utils'
+import { executeQuery, generateAuthScopes } from '../utils'
 import { DB } from '../../types'
 
 // https://pothos-graphql.dev/docs/guide/objects
@@ -24,16 +24,48 @@ const withUsers = (eb: ExpressionBuilder<DB, 'Trainer'>) => jsonArrayFrom(
 /**
  * Many-to-many relation between Endpoints and Permission
  */
-const withPermission = (eb: ExpressionBuilder<DB, 'Endpoints'>) => jsonArrayFrom(
-    eb.selectFrom('Permission')
-        .select([
-            'Permission.id',
-            'Permission.description',
-            'Permission.action'
-        ])
-        .innerJoin('_EndpointsToPermission', 'Permission.id', '_EndpointsToPermission.B')
-        .whereRef('_EndpointsToPermission.A', '=', 'Endpoints.endpoint')
-).as('permissions');
+// const withPermission = (eb: ExpressionBuilder<DB, 'Endpoints'>) => jsonArrayFrom(
+//     eb.selectFrom('Permission')
+//         .select([
+//             'Permission.id',
+//             'Permission.description',
+//             'Permission.action'
+//         ])
+//         .innerJoin('_EndpointsToPermission', 'Permission.id', '_EndpointsToPermission.B')
+//         .whereRef('_EndpointsToPermission.A', '=', 'Endpoints.endpoint')
+// ).as('permissions');
+
+/**
+ * Get permissions associated with a user
+ */
+export const getUserPermissions = (userId: string, db: any) => db
+    .selectFrom('UserRole')
+    .selectAll()
+    .where('userId', '=', userId)
+    .select(
+        (eb: ExpressionBuilder<DB, 'UserRole'>) => jsonArrayFrom(
+            eb.selectFrom('Role')
+                .selectAll()
+                .whereRef('Role.id', '=', 'UserRole.roleId')
+                .select(
+                    (eb: ExpressionBuilder<DB, 'Role'>) => jsonArrayFrom(
+                        eb.selectFrom('Permission')
+                            .select([
+                                'Permission.id',
+                                'Permission.description',
+                                'Permission.action',
+                                'Permission.resource'
+                            ])
+                            .innerJoin('_PermissionToRole', 'Permission.id', '_PermissionToRole.A')
+                            .whereRef('_PermissionToRole.B', '=', 'Role.id')
+                    ).as('permissions')
+                )
+        ).as('rolesWithPermissions')
+    )
+    .execute()
+    .then((result: any) => {
+        return result[0]['rolesWithPermissions'][0]['permissions'];
+    });
 
 /**
  * Query type
@@ -54,23 +86,48 @@ builder.queryType({
             )
         }),
         /**
-         * Get permissions associated with an endpoint
+         * Get user information
          */
-        endpoint: t.field({
-            type: EndpointType,
+        user: t.field({
+            type: UserType,
+            authScopes: generateAuthScopes({
+                resource: 'TEST',
+                action: 'VIEW'
+            }),
             args: {
-                endpoint: t.arg.string({ required: true }),
+                userId: t.arg.string({ required: true }),
             },
-            resolve: executeQuery((db, { endpoint }) => db
-                .selectFrom('Endpoints')
+            resolve: executeQuery((db, { userId }) => db
+                .selectFrom('User')
                 .selectAll()
-                .where('endpoint', '=', endpoint)
-                .select(withPermission)
+                .where('id', '=', userId)
                 .executeTakeFirst()
             )
         }),
+        /**
+         * Get permissions associated with an endpoint
+         */
+        // endpoint: t.field({
+        //     type: EndpointType,
+        //     authScopes: generateAuthScopes({
+        //         resource: 'TEST',
+        //         action: 'VIEW'
+        //     }),
+        //     args: {
+        //         endpoint: t.arg.string({ required: true }),
+        //     },
+        //     resolve: executeQuery((db, { endpoint }) => db
+        //         .selectFrom('Endpoints')
+        //         .selectAll()
+        //         .where('endpoint', '=', endpoint)
+        //         .select(withPermission)
+        //         .executeTakeFirst()
+        //     )
+        // }),
     })
-})
+});
+
+
 
 // see https://pothos-graphql.dev/docs/plugins/smart-subscriptions for subscriptions
 // see https://pothos-graphql.dev/docs/plugins/scope-auth for auth
