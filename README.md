@@ -27,3 +27,8 @@
 
 **Dev** - Sync the snaplet schema with the database:\
 ```npx @snaplet/seed sync```
+
+
+## TODO
+
+Cache responses from the database when querying for user permissions.

@@ -36,8 +36,9 @@ export type Trainer = {
 };
 export type User = {
     id: Generated<number>;
+    uuid: string;
     email: string;
-    password: string;
+    createdAt: Generated<Timestamp>;
     trainerId: number | null;
 };
 export type UserRole = {

@@ -67,6 +67,20 @@ export const getUserPermissions = (userId: string, db: any) => db
         return result[0]['rolesWithPermissions'][0]['permissions'];
     });
 
+
+export const updateDatabase = ({ table, key, data, db }: { table: string, key: string, data: { [key: string]: any }, db: any }) => db
+    .updateTable(table)
+    .set(data)
+    .where('id', '=', key)
+    .returning(['id'])
+    .executeTakeFirst();
+
+export const appendToDatabase = ({ table, data, db}: { table: string, data: { [key: string]: any }, db: any }) => db
+    .insertInto(table)
+    .values(data)
+    .returning(['id', 'createdAt'])
+    .executeTakeFirst();
+
 /**
  * Query type
  */

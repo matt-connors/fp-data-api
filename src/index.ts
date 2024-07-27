@@ -13,7 +13,8 @@ import { maxTokensPlugin } from '@escape.tech/graphql-armor-max-tokens'
 import { schema } from './schema';
 import { createContext } from "./context";
 
-import { getUserPermissions } from './resolvers/User/query';
+import { appendToDatabase, getUserPermissions, updateDatabase } from './resolvers/User/query';
+import { WorkerEntrypoint } from "cloudflare:workers";
 
 export interface Env {
     "fitness-db": Hyperdrive;
@@ -85,6 +86,7 @@ const yoga = createYoga<Env>({
         if (!userId) {
             return context;
         }
+        // TODO: REPLACE '1' with userId
         const permissions = await getUserPermissions('1', context.db);
         console.log('(permissions) --->', permissions);
         if (!permissions) {
@@ -97,14 +99,52 @@ const yoga = createYoga<Env>({
     }
 })
 
-export default {
-    async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
-        const context = createContext(env["fitness-db"].connectionString);
+/**
+ * Service binding for the Cloudflare Worker
+ */
+export default class extends WorkerEntrypoint {
+
+    protected env: Env;
+    protected ctx: ExecutionContext;
+    
+    constructor (ctx: ExecutionContext, env: Env) {
+        super(ctx, env);
+        this.env = env;
+        this.ctx = ctx;
+    }
+
+    /**
+     * Create a new context for the database
+     */
+    private _createContext() {
+        return createContext(this.env["fitness-db"].connectionString);
+    }
+
+
+    /**
+     * Default fetch handler for a Cloudflare Worker
+     */
+    async fetch(request: Request): Promise<Response> {
+        console.log('!!! RUNNING FETCH');
+        const context = createContext(this.env["fitness-db"].connectionString);
         const response = await yoga(request, {
-            ...env,
+            ...this.env,
             ...context,
         });
         await context.db.destroy();
         return response;
-    },
+    }
+    
+    /**
+     * Create a new user in the database
+     */
+    async createUser(data: any) {
+        let context = this._createContext();
+        let db = context.db;
+        return await appendToDatabase({
+            table: 'User',
+            data,
+            db
+        });
+    }
 };

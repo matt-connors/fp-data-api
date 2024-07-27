@@ -71,7 +71,7 @@ const main = async () => {
          */
         users: (x) => x({ min: 2, max: 8 }, () => ({
             email: faker.internet.email(),
-            password: faker.internet.password() + "_now",
+            uuid: faker.string.uuid(),
             /**
              * UserRoles
              */
