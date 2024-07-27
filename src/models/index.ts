@@ -1,4 +1,4 @@
-export * from './EndpointType';
+
 export * from './PermissionType';
 export * from './RoleType';
 export * from './TrainerType';

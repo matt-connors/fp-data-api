@@ -35,14 +35,13 @@ export type Trainer = {
     id: Generated<number>;
 };
 export type User = {
-    id: Generated<number>;
-    uuid: string;
+    id: string;
     email: string;
     createdAt: Generated<Timestamp>;
     trainerId: number | null;
 };
 export type UserRole = {
-    userId: number;
+    userId: string;
     roleId: number;
 };
 export type DB = {

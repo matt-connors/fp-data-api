@@ -2,7 +2,6 @@ import type { AllSelection } from 'kysely/dist/cjs/parser/select-parser';
 import { builder } from '../builder';
 import { DB } from '../types';
 
-import { EndpointType } from './EndpointType';
 import { RoleType } from './RoleType';
 
 export const PermissionType = builder.objectRef<AllSelection<DB, 'Permission'>>('Permission');
@@ -26,7 +25,6 @@ PermissionType.implement({
         action: t.expose('action', { type: PermissionAction }),
         description: t.expose('description', { type: 'String' }),
         roles: t.expose('roles', { type: [RoleType] }),
-        endpoints: t.expose('endpoints', { type: [EndpointType] }),
     }),
 
 });

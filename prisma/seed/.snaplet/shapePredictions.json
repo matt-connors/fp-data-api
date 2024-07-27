@@ -40,10 +40,10 @@
         "confidenceContext": 0
       },
       {
-        "input": "public user uuid",
-        "column": "uuid",
+        "input": "public user id",
+        "column": "id",
         "shape": "UUID",
-        "confidence": 0.985018789768219,
+        "confidence": 0.9964122176170349,
         "context": "GENERAL",
         "confidenceContext": 0
       }

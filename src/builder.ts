@@ -43,7 +43,7 @@ export const builder = new SchemaBuilder<SchemaTypes>({
         // the boolean is whether the resource the user is attempting to access is allowed based on their permissions
         authScopes: async (context: any) => context.permissions.map((permission: { action: PermissionAction, resource: Resource }) => ({
             // The user must have a permission level greater than the required action
-            [permission.resource]: (requiredAction: PermissionAction) => accessRanking[permission.action] > accessRanking[requiredAction]
+            [permission.resource]: (requiredAction: PermissionAction) => accessRanking[permission.action] >= accessRanking[requiredAction]
         })).reduce((acc: any, curr: any) => ({ ...acc, ...curr }), {})
     }
 })

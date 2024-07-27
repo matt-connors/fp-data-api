@@ -50,7 +50,7 @@ model Permission {
 }
 
 model UserRole {
-    userId Int
+    userId String
     roleId Int
     user   User @relation(fields: [userId], references: [id])
     role   Role @relation(fields: [roleId], references: [id])
@@ -69,14 +69,12 @@ model UserRole {
 // Data-related models
 
 model User {
-    id        Int        @id @default(autoincrement())
-    uuid      String     @unique
+    id        String     @id
     email     String     @unique
     createdAt DateTime   @default(now())
     userRoles UserRole[]
     trainerId Int?
     trainer   Trainer?   @relation(fields: [trainerId], references: [id])
-    
 }
 
 model Trainer {

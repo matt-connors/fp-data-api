@@ -87,11 +87,8 @@ const yoga = createYoga<Env>({
             return context;
         }
         // TODO: REPLACE '1' with userId
-        const permissions = await getUserPermissions('1', context.db);
+        const permissions = await getUserPermissions(userId, context.db) || [];
         console.log('(permissions) --->', permissions);
-        if (!permissions) {
-            return context;
-        }
         return {
             ...context,
             permissions,
@@ -106,8 +103,8 @@ export default class extends WorkerEntrypoint {
 
     protected env: Env;
     protected ctx: ExecutionContext;
-    
-    constructor (ctx: ExecutionContext, env: Env) {
+
+    constructor(ctx: ExecutionContext, env: Env) {
         super(ctx, env);
         this.env = env;
         this.ctx = ctx;
@@ -125,7 +122,6 @@ export default class extends WorkerEntrypoint {
      * Default fetch handler for a Cloudflare Worker
      */
     async fetch(request: Request): Promise<Response> {
-        console.log('!!! RUNNING FETCH');
         const context = createContext(this.env["fitness-db"].connectionString);
         const response = await yoga(request, {
             ...this.env,
@@ -134,17 +130,35 @@ export default class extends WorkerEntrypoint {
         await context.db.destroy();
         return response;
     }
-    
+
     /**
      * Create a new user in the database
      */
-    async createUser(data: any) {
+    async createUser(data: { id: string, [key: string]: any }) {
         let context = this._createContext();
         let db = context.db;
-        return await appendToDatabase({
+        console.log('data ->', data);
+
+        if (!data.id) {
+            throw new Error('User ID is required.');
+        }
+
+        // Add a new user to the database
+        await appendToDatabase({
             table: 'User',
             data,
             db
-        });
+        }),
+
+        // Add a new UserRole to the database
+        // Note that this must be done sequentially in order to reference the new user's ID
+        await appendToDatabase({
+            table: 'UserRole',
+            data: {
+                userId: data.id,
+                roleId: 8 // TODO: manually add a default role for testing
+            },
+            db
+        })
     }
 };

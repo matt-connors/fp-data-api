@@ -11,7 +11,6 @@ UserType.implement({
     fields: (t) => ({
         id: t.exposeID('id'),
         email: t.exposeString('email'),
-        password: t.exposeString('password', { nullable: true }),
         userRoles: t.expose('userRoles', { type: [UserRoleType] }),
         trainer: t.expose('trainer', { type: TrainerType }),
     }),

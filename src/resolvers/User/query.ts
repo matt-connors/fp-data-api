@@ -2,7 +2,7 @@ import { ExpressionBuilder } from 'kysely'
 import { jsonArrayFrom, jsonObjectFrom } from 'kysely/helpers/postgres'
 import { Resource, builder } from '../../builder'
 
-import { TrainerType, UserType, EndpointType } from '../../models'
+import { TrainerType, UserType } from '../../models'
 
 import { executeQuery, generateAuthScopes } from '../utils'
 import { DB } from '../../types'
@@ -64,6 +64,14 @@ export const getUserPermissions = (userId: string, db: any) => db
     )
     .execute()
     .then((result: any) => {
+        if (result.length === 0) {
+            console.log(`User with id "${userId}" was not found in the UserRole table.`);
+            return null;
+        }
+        if (result[0]['rolesWithPermissions'].length === 0) {
+            console.log(`User with id "${userId}" has no roles and therefore no permissions.`);
+            return null;
+        }
         return result[0]['rolesWithPermissions'][0]['permissions'];
     });
 
@@ -72,13 +80,11 @@ export const updateDatabase = ({ table, key, data, db }: { table: string, key: s
     .updateTable(table)
     .set(data)
     .where('id', '=', key)
-    .returning(['id'])
     .executeTakeFirst();
 
 export const appendToDatabase = ({ table, data, db}: { table: string, data: { [key: string]: any }, db: any }) => db
     .insertInto(table)
     .values(data)
-    .returning(['id', 'createdAt'])
     .executeTakeFirst();
 
 /**
