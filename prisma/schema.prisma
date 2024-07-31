@@ -67,12 +67,12 @@ model UserRole {
 // Data-related models
 
 model User {
-    id            String      @id
-    email         String      @unique
-    createdAt     DateTime    @default(now())
+    id            String       @id
+    email         String       @unique
+    createdAt     DateTime     @default(now())
     userRoles     UserRole[]
     trainerId     Int?
-    trainer       Trainer?    @relation(fields: [trainerId], references: [id])
+    trainer       Trainer?     @relation(fields: [trainerId], references: [id])
     userProgram   UserProgram?
     userProgramId Int
 }
@@ -90,7 +90,7 @@ model Exercise {
     aliases          String[]
     category         String
     programExercises ProgramExercise[]
-    icon_url         String
+    // iconUrl          String
 }
 
 model Program {
