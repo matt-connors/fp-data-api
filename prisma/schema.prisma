@@ -29,6 +29,11 @@ enum Resource {
     TEST2
 }
 
+enum ProgramType {
+    Library
+    Custom
+}
+
 // Auth-related models
 
 model Role {
@@ -52,34 +57,88 @@ model Permission {
 model UserRole {
     userId String
     roleId Int
-    user   User @relation(fields: [userId], references: [id])
-    role   Role @relation(fields: [roleId], references: [id])
+    user   User   @relation(fields: [userId], references: [id])
+    role   Role   @relation(fields: [roleId], references: [id])
 
     @@id([userId, roleId])
     @@index([roleId])
 }
 
-// Endpoints model
-
-// model Endpoints {
-//     endpoint    String       @id
-//     permissions Permission[]
-// }
-
 // Data-related models
 
 model User {
-    id        String     @id
-    email     String     @unique
-    createdAt DateTime   @default(now())
-    userRoles UserRole[]
-    trainerId Int?
-    trainer   Trainer?   @relation(fields: [trainerId], references: [id])
+    id            String      @id
+    email         String      @unique
+    createdAt     DateTime    @default(now())
+    userRoles     UserRole[]
+    trainerId     Int?
+    trainer       Trainer?    @relation(fields: [trainerId], references: [id])
+    userProgram   UserProgram?
+    userProgramId Int
 }
 
 model Trainer {
-    id    Int    @id @default(autoincrement())
-    users User[]
+    id              Int               @id @default(autoincrement())
+    users           User[]
+    trainerPrograms TrainerPrograms[]
+}
+
+model Exercise {
+    id               Int               @id @default(autoincrement())
+    name             String            @unique
+    bodyPart         String
+    aliases          String[]
+    category         String
+    programExercises ProgramExercise[]
+    icon_url         String
+}
+
+model Program {
+    id               Int               @id @default(autoincrement())
+    type             ProgramType
+    name             String            @unique
+    description      String
+    trainerPrograms  TrainerPrograms[]
+    createdAt        DateTime          @default(now())
+    updatedAt        DateTime          @updatedAt
+    programExercises ProgramExercise[]
+    userPrograms     UserProgram[]
+
+    @@index([type]) // Index for filtering by type since we will have an indefinite number of programs
+}
+
+model ProgramExercise {
+    program    Program  @relation(fields: [programId], references: [id])
+    exercise   Exercise @relation(fields: [exerciseId], references: [id])
+    programId  Int
+    exerciseId Int
+    order      Int // Position of the exercise in the program
+    sets       Int?
+    reps       Int?
+    duration   Int? // in seconds, if applicable
+    notes      String?
+
+    @@id([programId, exerciseId])
+    @@index([programId]) // This index is crucial for our main query pattern
+}
+
+model TrainerPrograms {
+    id       Int     @id @default(autoincrement())
+    trainer  Trainer @relation(fields: [trainerId], references: [id])
+    programs Program @relation(fields: [programsId], references: [id])
+
+    trainerId  Int
+    programsId Int
+}
+
+model UserProgram {
+    id        Int       @id @default(autoincrement())
+    user      User      @relation(fields: [userId], references: [id])
+    program   Program   @relation(fields: [programId], references: [id])
+    userId    String    @unique
+    programId Int
+    startDate DateTime
+    endDate   DateTime?
 }
 
 // model Form {

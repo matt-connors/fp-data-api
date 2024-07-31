@@ -1,6 +1,44 @@
 [
   {
     "schemaName": "public",
+    "tableName": "Exercise",
+    "predictions": [
+      {
+        "input": "public exercise aliases",
+        "column": "aliases",
+        "shape": "INTERNET_DISPLAY_NAME",
+        "confidence": 0.9772263765335083,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "public exercise body_part",
+        "column": "bodyPart",
+        "shape": "POST_BODY",
+        "confidence": 0.9862222075462341,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "public exercise category",
+        "column": "category",
+        "shape": "COMMERCE_PRODUCT",
+        "confidence": 0.6802073121070862,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "public exercise name",
+        "column": "name",
+        "shape": "COMMERCE_PRODUCT_NAME",
+        "confidence": 0.7455113530158997,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      }
+    ]
+  },
+  {
+    "schemaName": "public",
     "tableName": "Permission",
     "predictions": [
       {
@@ -8,6 +46,42 @@
         "column": "description",
         "shape": "PERMISSION",
         "confidence": 0.7,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      }
+    ]
+  },
+  {
+    "schemaName": "public",
+    "tableName": "Program",
+    "predictions": [
+      {
+        "input": "public program description",
+        "column": "description",
+        "shape": "COMMERCE_PRODUCT_DESCRIPTION",
+        "confidence": 0.9665691256523132,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "public program name",
+        "column": "name",
+        "shape": "COMMERCE_PRODUCT_NAME",
+        "confidence": 0.9259732365608215,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      }
+    ]
+  },
+  {
+    "schemaName": "public",
+    "tableName": "ProgramExercise",
+    "predictions": [
+      {
+        "input": "public program_exercise notes",
+        "column": "notes",
+        "shape": "COMMERCE_PRODUCT_DESCRIPTION",
+        "confidence": 0.3764799237251282,
         "context": "GENERAL",
         "confidenceContext": 0
       }

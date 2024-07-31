@@ -62,6 +62,17 @@ const main = async () => {
     })), { connect: { permission } });
 
     /**
+     * Exercises
+     */
+    console.log('Seeding exercises...');
+    const { exercise } = await seed.exercise(x => x(10, () => ({
+        name: faker.lorem.words(2),
+        bodypart: copycat.oneOfString(Math.random(), ["CHEST", "BACK", "LEGS", "ARMS", "SHOULDERS", "CORE"]),
+        category: copycat.oneOfString(Math.random(), ["STRENGTH", "CARDIO", "FLEXIBILITY"]),
+        aliases: [faker.lorem.word(), faker.lorem.word(), faker.lorem.word()].slice(0, Math.floor(Math.random() * 3) + 1),
+    })));
+
+    /**
      * Trainers
      */
     console.log('Seeding trainers...');
@@ -75,9 +86,31 @@ const main = async () => {
             /**
              * UserRoles
              */
-            userRoles: (x) => x({ min: 1, max: 2 })
+            userRoles: (x) => x({ min: 1, max: 2 }),
+            /**
+             * Programs
+             */
+            programs: (x: any) => x({ min: 1, max: 2 }, () => ({
+                type: copycat.oneOfString(Math.random(), ["LIBRARY", "CUSTOM"]),
+                name: faker.lorem.words(2),
+                description: faker.lorem.sentence(),
+                trainerPrograms: (x: any) => x({ min: 1, max: 2 }),
+                programExercises: (x: any) => x({ min: 1, max: 5 }, () => ({
+                    exercise: (x: any) => x(1),
+                    order: copycat.int(Math.random(), { min: 1, max: 10 }),
+                    sets: copycat.int(Math.random(), { min: 1, max: 5 }),
+                    reps: copycat.int(Math.random(), { min: 1, max: 20 }),
+                    duration: copycat.int(Math.random(), { min: 1, max: 60 }),
+                    notes: faker.lorem.sentence(),
+                }), { connect: { exercise } }),
+            })),
+            userProgram: (x: any) => x(1)
         }))
     })), { connect: { role } });
+
+    /**
+     * 
+     */
 
     console.log("Database seeded successfully!");
 

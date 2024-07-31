@@ -43,7 +43,9 @@
     "@types/pg": "^8.11.6",
     "prisma": "^5.16.2",
     "prisma-kysely": "^1.8.0",
+    "siphash": "^1.1.0",
     "ts-node": "^10.9.2",
+    "tsx": "^4.16.2",
     "typescript": "^5.5.4",
     "wrangler": "^3.64.0"
   },

@@ -32,3 +32,4 @@
 ## TODO
 
 Cache responses from the database when querying for user permissions.
+Catch invalid permission errors and return a 403 status code.

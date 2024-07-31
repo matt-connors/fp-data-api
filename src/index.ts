@@ -13,8 +13,9 @@ import { maxTokensPlugin } from '@escape.tech/graphql-armor-max-tokens'
 import { schema } from './schema';
 import { createContext } from "./context";
 
-import { appendToDatabase, getUserPermissions, updateDatabase } from './resolvers/User/query';
 import { WorkerEntrypoint } from "cloudflare:workers";
+
+import { getUserPermissions, appendToDatabase } from './utils';
 
 export interface Env {
     "fitness-db": Hyperdrive;
@@ -74,9 +75,9 @@ const yoga = createYoga<Env>({
     // cors: {
     //     origin: '*',
     //     methods: ['GET', 'POST', 'OPTIONS'],
-    //     allowedHeaders: ['Content-Type', 'Authorization'],
-    //     exposedHeaders: ['Content-Range', 'X-Content-Range'],
-    //     credentials: true,
+    //     // allowedHeaders: ['Content-Type', 'Authorization'],
+    //     // exposedHeaders: ['Content-Range', 'X-Content-Range'],
+    //     // credentials: true,
     //     maxAge: 86400,
     // },
     logging: logger,
