@@ -8,7 +8,7 @@ export function executeQuery(callback: (context: any, args?: any, ctx?: any) => 
     return async (_root: any, _args: any, ctx: any) => {
         try {
             return await callback(ctx.db, _args, ctx).then((result: any) => {
-                // console.log('result', JSON.stringify(result));
+                console.log('result', JSON.stringify(result));
                 return result;
             });
         }

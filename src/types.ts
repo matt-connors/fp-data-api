@@ -66,14 +66,14 @@ export type Trainer = {
 export type TrainerPrograms = {
     id: Generated<number>;
     trainerId: number;
-    programsId: number;
+    programId: number;
 };
 export type User = {
     id: string;
     email: string;
     createdAt: Generated<Timestamp>;
     trainerId: number | null;
-    userProgramId: number;
+    userProgramId: number | null;
 };
 export type UserProgram = {
     id: Generated<number>;

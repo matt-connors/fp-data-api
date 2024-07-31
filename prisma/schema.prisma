@@ -74,13 +74,13 @@ model User {
     trainerId     Int?
     trainer       Trainer?     @relation(fields: [trainerId], references: [id])
     userProgram   UserProgram?
-    userProgramId Int
+    userProgramId Int?
 }
 
 model Trainer {
     id              Int               @id @default(autoincrement())
     users           User[]
-    trainerPrograms TrainerPrograms[]
+    trainerPrograms TrainerProgram[]
 }
 
 model Exercise {
@@ -98,7 +98,7 @@ model Program {
     type             ProgramType
     name             String            @unique
     description      String
-    trainerPrograms  TrainerPrograms[]
+    trainerPrograms  TrainerProgram[]
     createdAt        DateTime          @default(now())
     updatedAt        DateTime          @updatedAt
     programExercises ProgramExercise[]
@@ -122,13 +122,13 @@ model ProgramExercise {
     @@index([programId]) // This index is crucial for our main query pattern
 }
 
-model TrainerPrograms {
-    id       Int     @id @default(autoincrement())
-    trainer  Trainer @relation(fields: [trainerId], references: [id])
-    programs Program @relation(fields: [programsId], references: [id])
+model TrainerProgram {
+    id      Int     @id @default(autoincrement())
+    trainer Trainer @relation(fields: [trainerId], references: [id])
+    program Program @relation(fields: [programId], references: [id])
 
-    trainerId  Int
-    programsId Int
+    trainerId Int
+    programId Int
 }
 
 model UserProgram {

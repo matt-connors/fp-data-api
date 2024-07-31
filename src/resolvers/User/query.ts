@@ -1,11 +1,11 @@
-import { ExpressionBuilder } from 'kysely'
+import type { ExpressionBuilder } from 'kysely'
 import { jsonArrayFrom, jsonObjectFrom } from 'kysely/helpers/postgres'
-import { Resource, builder } from '../../builder'
+import { builder } from '../../builder'
 
-import { TrainerType, UserType } from '../../models'
+import { UserType } from '../../models'
 
 import { executeQuery, generateAuthScopes } from '../utils'
-import { DB } from '../../types'
+import type { DB } from '../../types'
 
 // https://pothos-graphql.dev/docs/guide/objects
 // https://kysely.dev/docs/examples/INSERT/returning-data

@@ -94,7 +94,6 @@ const main = async () => {
                 type: copycat.oneOfString(Math.random(), ["LIBRARY", "CUSTOM"]),
                 name: faker.lorem.words(2),
                 description: faker.lorem.sentence(),
-                trainerPrograms: (x: any) => x({ min: 1, max: 2 }),
                 programExercises: (x: any) => x({ min: 1, max: 5 }, () => ({
                     exercise: (x: any) => x(1),
                     order: copycat.int(Math.random(), { min: 1, max: 10 }),
@@ -105,7 +104,11 @@ const main = async () => {
                 }), { connect: { exercise } }),
             })),
             userProgram: (x: any) => x(1)
-        }))
+        })),
+        /**
+         * TrainerPrograms
+         */
+        trainerPrograms: (x: any) => x({ min: 2, max: 5 })
     })), { connect: { role } });
 
     /**

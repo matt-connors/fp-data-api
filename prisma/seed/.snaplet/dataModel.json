@@ -696,9 +696,9 @@
           "maxLength": null
         },
         {
-          "id": "public.TrainerPrograms.programsId",
-          "name": "programsId",
-          "columnName": "programsId",
+          "id": "public.TrainerPrograms.programId",
+          "name": "programId",
+          "columnName": "programId",
           "type": "int4",
           "isRequired": true,
           "kind": "scalar",
@@ -716,7 +716,7 @@
           "kind": "object",
           "relationName": "TrainerProgramsToProgram",
           "relationFromFields": [
-            "programsId"
+            "programId"
           ],
           "relationToFields": [
             "id"
@@ -822,7 +822,7 @@
           "name": "userProgramId",
           "columnName": "userProgramId",
           "type": "int4",
-          "isRequired": true,
+          "isRequired": false,
           "kind": "scalar",
           "isList": false,
           "isGenerated": false,
