@@ -8,7 +8,7 @@ import { executeQuery, generateAuthScopes } from '../utils'
 import { DB } from '../../types'
 
 /**
- * Relation between Trainer, TrainerPrograms and Program
+ * Relation between Trainer, TrainerProgram and Program
  */
 const trainerWithPrograms = (eb: ExpressionBuilder<DB, 'Trainer'>) => jsonArrayFrom(
     eb.selectFrom('Program')
@@ -18,9 +18,9 @@ const trainerWithPrograms = (eb: ExpressionBuilder<DB, 'Trainer'>) => jsonArrayF
             'Program.type',
             'Program.name'
         ])
-        .innerJoin('TrainerPrograms', 'Program.id', 'TrainerPrograms.programId')
-        .whereRef('TrainerPrograms.trainerId', '=', 'Trainer.id')
-).as('trainerPrograms');
+        .innerJoin('TrainerProgram', 'Program.id', 'TrainerProgram.programId')
+        .whereRef('TrainerProgram.trainerId', '=', 'Trainer.id')
+).as('trainerProgram');
 
 builder.queryFields((t) => ({
     /**
@@ -64,7 +64,7 @@ builder.queryFields((t) => ({
                 return result.map((trainer: any) => {
                     return {
                         ...trainer,
-                        trainerPrograms: trainer.trainerPrograms.map((program: any) => ({
+                        trainerProgram: trainer.trainerProgram.map((program: any) => ({
                             program: [program]
                         }))
                     }

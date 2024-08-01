@@ -28,9 +28,9 @@ builder.queryFields((t) => ({
         )
     }),
     /**
-     * Get all public exercises from the exercise library
+     * Get all exercuses
      */
-    publicExercises: t.field({
+    exercises: t.field({
         type: [ExerciseType],
         authScopes: generateAuthScopes({
             resource: 'TEST',
@@ -39,7 +39,6 @@ builder.queryFields((t) => ({
         resolve: executeQuery((db) => db
             .selectFrom('Exercise')
             .selectAll()
-            .where('type', '=', 'LIBRARY')
             .execute()
         )
     }),

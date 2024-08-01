@@ -1,0 +1,3186 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Bench Press",
+            "name_url": "bench-press",
+            "bodypart": "Chest",
+            "count": 39132335,
+            "category": "Barbell",
+            "aliases": [
+                "Bench"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bench-press\/icons\/bench-press-icon-128.png"
+        },
+        {
+            "id": 4,
+            "name": "Squat",
+            "name_url": "squat",
+            "bodypart": "Legs",
+            "count": 20773662,
+            "category": "Barbell",
+            "aliases": [
+                "Back Squat"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/squat\/icons\/squat-icon-128.png"
+        },
+        {
+            "id": 5,
+            "name": "Deadlift",
+            "name_url": "deadlift",
+            "bodypart": "Whole Body",
+            "count": 19266983,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/deadlift\/icons\/deadlift-icon-128.png"
+        },
+        {
+            "id": 6,
+            "name": "Shoulder Press",
+            "name_url": "shoulder-press",
+            "bodypart": "Shoulders",
+            "count": 4632867,
+            "category": "Barbell",
+            "aliases": [
+                "Overhead Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/shoulder-press\/icons\/shoulder-press-icon-128.png"
+        },
+        {
+            "id": 19,
+            "name": "Dumbbell Bench Press",
+            "name_url": "dumbbell-bench-press",
+            "bodypart": "Chest",
+            "count": 3603301,
+            "category": "Dumbbell",
+            "aliases": [
+                "Dumbbell Bench",
+                "Dumbbell Chest Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-bench-press\/icons\/dumbbell-bench-press-icon-128.png"
+        },
+        {
+            "id": 14,
+            "name": "Pull Ups",
+            "name_url": "pull-ups",
+            "bodypart": "Back",
+            "count": 3338216,
+            "category": "Bodyweight",
+            "aliases": [
+                "Pullup",
+                "Assisted Pull Up Machine"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/pull-ups\/icons\/pull-ups-icon-128.png"
+        },
+        {
+            "id": 17,
+            "name": "Dumbbell Curl",
+            "name_url": "dumbbell-curl",
+            "bodypart": "Biceps",
+            "count": 2731749,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-curl\/icons\/dumbbell-curl-icon-128.png"
+        },
+        {
+            "id": 9,
+            "name": "Barbell Curl",
+            "name_url": "barbell-curl",
+            "bodypart": "Biceps",
+            "count": 2075258,
+            "category": "Barbell",
+            "aliases": [
+                "Bicep Curl",
+                "Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-curl\/icons\/barbell-curl-icon-128.png"
+        },
+        {
+            "id": 28,
+            "name": "Push Ups",
+            "name_url": "push-ups",
+            "bodypart": "Chest",
+            "count": 1996466,
+            "category": "Bodyweight",
+            "aliases": [
+                "Press Up"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/push-ups\/icons\/push-ups-icon-128.png"
+        },
+        {
+            "id": 20,
+            "name": "Sled Leg Press",
+            "name_url": "sled-leg-press",
+            "bodypart": "Legs",
+            "count": 1852347,
+            "category": "Machine",
+            "aliases": [
+                "Leg Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/sled-leg-press\/icons\/sled-leg-press-icon-128.png"
+        },
+        {
+            "id": 18,
+            "name": "Dumbbell Shoulder Press",
+            "name_url": "dumbbell-shoulder-press",
+            "bodypart": "Shoulders",
+            "count": 1704352,
+            "category": "Dumbbell",
+            "aliases": [
+                "Dumbbell Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-shoulder-press\/icons\/dumbbell-shoulder-press-icon-128.png"
+        },
+        {
+            "id": 8,
+            "name": "Bent Over Row",
+            "name_url": "bent-over-row",
+            "bodypart": "Back",
+            "count": 1693925,
+            "category": "Barbell",
+            "aliases": [
+                "Row",
+                "Barbell Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bent-over-row\/icons\/bent-over-row-icon-128.png"
+        },
+        {
+            "id": 35,
+            "name": "Incline Bench Press",
+            "name_url": "incline-bench-press",
+            "bodypart": "Chest",
+            "count": 1560003,
+            "category": "Barbell",
+            "aliases": [
+                "Incline Bench",
+                "Incline Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/incline-bench-press\/icons\/incline-bench-press-icon-128.png"
+        },
+        {
+            "id": 47,
+            "name": "Incline Dumbbell Bench Press",
+            "name_url": "incline-dumbbell-bench-press",
+            "bodypart": "Chest",
+            "count": 1537107,
+            "category": "Dumbbell",
+            "aliases": [
+                "Incline Dumbbell Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/incline-dumbbell-bench-press\/icons\/incline-dumbbell-bench-press-icon-128.png"
+        },
+        {
+            "id": 22,
+            "name": "Lat Pulldown",
+            "name_url": "lat-pulldown",
+            "bodypart": "Back",
+            "count": 1375641,
+            "category": "Cable",
+            "aliases": [
+                "Pulldown",
+                "Machine Pulldown",
+                "Back Lat Pulldown",
+                "Lateral Pulldown"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/lat-pulldown\/icons\/lat-pulldown-icon-128.png"
+        },
+        {
+            "id": 15,
+            "name": "Dips",
+            "name_url": "dips",
+            "bodypart": "Triceps",
+            "count": 1349730,
+            "category": "Bodyweight",
+            "aliases": [
+                "Tricep Dips",
+                "Chest Dip",
+                "Kneeling Assisted Chest Dip"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dips\/icons\/dips-icon-128.png"
+        },
+        {
+            "id": 7,
+            "name": "Front Squat",
+            "name_url": "front-squat",
+            "bodypart": "Legs",
+            "count": 1332989,
+            "category": "Barbell",
+            "aliases": [
+                "Barbell Front Squat",
+                "Clean Grip Front Squat",
+                "Cross Grip Front Squat"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/front-squat\/icons\/front-squat-icon-128.png"
+        },
+        {
+            "id": 24,
+            "name": "Hex Bar Deadlift",
+            "name_url": "hex-bar-deadlift",
+            "bodypart": "Whole Body",
+            "count": 989741,
+            "category": "Barbell",
+            "aliases": [
+                "Trap Bar Deadlift",
+                "Trapbar Deadlift",
+                "Hex Bar Squat"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hex-bar-deadlift\/icons\/hex-bar-deadlift-icon-128.png"
+        },
+        {
+            "id": 2,
+            "name": "Power Clean",
+            "name_url": "power-clean",
+            "bodypart": "Whole Body",
+            "count": 891183,
+            "category": "Barbell",
+            "aliases": [
+                "Powerclean"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/power-clean\/icons\/power-clean-icon-128.png"
+        },
+        {
+            "id": 29,
+            "name": "Dumbbell Lateral Raise",
+            "name_url": "dumbbell-lateral-raise",
+            "bodypart": "Shoulders",
+            "count": 844276,
+            "category": "Dumbbell",
+            "aliases": [
+                "Lateral Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-lateral-raise\/icons\/dumbbell-lateral-raise-icon-128.png"
+        },
+        {
+            "id": 25,
+            "name": "Hip Thrust",
+            "name_url": "hip-thrust",
+            "bodypart": "Legs",
+            "count": 808311,
+            "category": "Barbell",
+            "aliases": [
+                "Barbell Hip Thrust"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hip-thrust\/icons\/hip-thrust-icon-128.png"
+        },
+        {
+            "id": 36,
+            "name": "Leg Extension",
+            "name_url": "leg-extension",
+            "bodypart": "Legs",
+            "count": 751670,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/leg-extension\/icons\/leg-extension-icon-128.png"
+        },
+        {
+            "id": 23,
+            "name": "Romanian Deadlift",
+            "name_url": "romanian-deadlift",
+            "bodypart": "Whole Body",
+            "count": 732696,
+            "category": "Barbell",
+            "aliases": [
+                "Straight Leg Deadlift"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/romanian-deadlift\/icons\/romanian-deadlift-icon-128.png"
+        },
+        {
+            "id": 32,
+            "name": "Chin Ups",
+            "name_url": "chin-ups",
+            "bodypart": "Back",
+            "count": 727587,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/chin-ups\/icons\/chin-ups-icon-128.png"
+        },
+        {
+            "id": 90,
+            "name": "Military Press",
+            "name_url": "military-press",
+            "bodypart": "Shoulders",
+            "count": 727124,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/military-press\/icons\/military-press-icon-128.png"
+        },
+        {
+            "id": 21,
+            "name": "Horizontal Leg Press",
+            "name_url": "horizontal-leg-press",
+            "bodypart": "Legs",
+            "count": 707898,
+            "category": "Machine",
+            "aliases": [
+                "Seated Leg Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/horizontal-leg-press\/icons\/horizontal-leg-press-icon-128.png"
+        },
+        {
+            "id": 59,
+            "name": "Sumo Deadlift",
+            "name_url": "sumo-deadlift",
+            "bodypart": "Whole Body",
+            "count": 694293,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/sumo-deadlift\/icons\/sumo-deadlift-icon-128.png"
+        },
+        {
+            "id": 16,
+            "name": "Dumbbell Row",
+            "name_url": "dumbbell-row",
+            "bodypart": "Back",
+            "count": 672084,
+            "category": "Dumbbell",
+            "aliases": [
+                "Dumbbell Bent Over Row",
+                "One Arm Dumbbell Row",
+                "One Arm Row",
+                "Dumbbell Rear Delt Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-row\/icons\/dumbbell-row-icon-128.png"
+        },
+        {
+            "id": 83,
+            "name": "Chest Press",
+            "name_url": "chest-press",
+            "bodypart": "Chest",
+            "count": 548046,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/chest-press\/icons\/chest-press-icon-128.png"
+        },
+        {
+            "id": 51,
+            "name": "Tricep Pushdown",
+            "name_url": "tricep-pushdown",
+            "bodypart": "Triceps",
+            "count": 522252,
+            "category": "Cable",
+            "aliases": [
+                "Tricep Pressdown",
+                "Pushdown",
+                "Cable Tricep Extension"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/tricep-pushdown\/icons\/tricep-pushdown-icon-128.png"
+        },
+        {
+            "id": 60,
+            "name": "Hammer Curl",
+            "name_url": "hammer-curl",
+            "bodypart": "Biceps",
+            "count": 480999,
+            "category": "Dumbbell",
+            "aliases": [
+                "Dumbbell Hammer Curl",
+                "Hammer Curls"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hammer-curl\/icons\/hammer-curl-icon-128.png"
+        },
+        {
+            "id": 63,
+            "name": "Seated Cable Row",
+            "name_url": "seated-cable-row",
+            "bodypart": "Back",
+            "count": 461147,
+            "category": "Cable",
+            "aliases": [
+                "Seated Row",
+                "Cable Row",
+                "Low Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-cable-row\/icons\/seated-cable-row-icon-128.png"
+        },
+        {
+            "id": 11,
+            "name": "Clean and Jerk",
+            "name_url": "clean-and-jerk",
+            "bodypart": "Whole Body",
+            "count": 360730,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/clean-and-jerk\/icons\/clean-and-jerk-icon-128.png"
+        },
+        {
+            "id": 10,
+            "name": "Snatch",
+            "name_url": "snatch",
+            "bodypart": "Whole Body",
+            "count": 341347,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/snatch\/icons\/snatch-icon-128.png"
+        },
+        {
+            "id": 68,
+            "name": "Hack Squat",
+            "name_url": "hack-squat",
+            "bodypart": "Legs",
+            "count": 323052,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hack-squat\/icons\/hack-squat-icon-128.png"
+        },
+        {
+            "id": 67,
+            "name": "Close Grip Bench Press",
+            "name_url": "close-grip-bench-press",
+            "bodypart": "Chest",
+            "count": 307686,
+            "category": "Barbell",
+            "aliases": [
+                "Close Grip Bench"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/close-grip-bench-press\/icons\/close-grip-bench-press-icon-128.png"
+        },
+        {
+            "id": 38,
+            "name": "Seated Leg Curl",
+            "name_url": "seated-leg-curl",
+            "bodypart": "Legs",
+            "count": 303891,
+            "category": "Machine",
+            "aliases": [
+                "Leg Curl",
+                "Hamstring Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-leg-curl\/icons\/seated-leg-curl-icon-128.png"
+        },
+        {
+            "id": 111,
+            "name": "EZ Bar Curl",
+            "name_url": "ez-bar-curl",
+            "bodypart": "Biceps",
+            "count": 295877,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/ez-bar-curl\/icons\/ez-bar-curl-icon-128.png"
+        },
+        {
+            "id": 66,
+            "name": "Dumbbell Bulgarian Split Squat",
+            "name_url": "dumbbell-bulgarian-split-squat",
+            "bodypart": "Legs",
+            "count": 294764,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-bulgarian-split-squat\/icons\/dumbbell-bulgarian-split-squat-icon-128.png"
+        },
+        {
+            "id": 92,
+            "name": "Machine Chest Fly",
+            "name_url": "machine-chest-fly",
+            "bodypart": "Chest",
+            "count": 290860,
+            "category": "Machine",
+            "aliases": [
+                "Pec Deck Fly",
+                "Butterfly",
+                "Machine Fly",
+                "Fly Machine",
+                "Pec Deck",
+                "Pec Fly"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-chest-fly\/icons\/machine-chest-fly-icon-128.png"
+        },
+        {
+            "id": 261,
+            "name": "Seated Dumbbell Shoulder Press",
+            "name_url": "seated-dumbbell-shoulder-press",
+            "bodypart": "Shoulders",
+            "count": 289685,
+            "category": "Dumbbell",
+            "aliases": [
+                "Seated Dumbbell Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-dumbbell-shoulder-press\/icons\/seated-dumbbell-shoulder-press-icon-128.png"
+        },
+        {
+            "id": 123,
+            "name": "Seated Shoulder Press",
+            "name_url": "seated-shoulder-press",
+            "bodypart": "Shoulders",
+            "count": 287479,
+            "category": "Barbell",
+            "aliases": [
+                "Seated Barbell Shoulder Press",
+                "Seated Barbell Overhead Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-shoulder-press\/icons\/seated-shoulder-press-icon-128.png"
+        },
+        {
+            "id": 89,
+            "name": "Machine Shoulder Press",
+            "name_url": "machine-shoulder-press",
+            "bodypart": "Shoulders",
+            "count": 273693,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-shoulder-press\/icons\/machine-shoulder-press-icon-128.png"
+        },
+        {
+            "id": 12,
+            "name": "Clean",
+            "name_url": "clean",
+            "bodypart": "Whole Body",
+            "count": 273489,
+            "category": "Barbell",
+            "aliases": [
+                "Squat Clean"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/clean\/icons\/clean-icon-128.png"
+        },
+        {
+            "id": 44,
+            "name": "Lying Tricep Extension",
+            "name_url": "lying-tricep-extension",
+            "bodypart": "Triceps",
+            "count": 272033,
+            "category": "Barbell",
+            "aliases": [
+                "Skull Crusher",
+                "Skullcrusher"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/lying-tricep-extension\/icons\/lying-tricep-extension-icon-128.png"
+        },
+        {
+            "id": 31,
+            "name": "Barbell Shrug",
+            "name_url": "barbell-shrug",
+            "bodypart": "Back",
+            "count": 265199,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-shrug\/icons\/barbell-shrug-icon-128.png"
+        },
+        {
+            "id": 13,
+            "name": "Push Press",
+            "name_url": "push-press",
+            "bodypart": "Shoulders",
+            "count": 262675,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/push-press\/icons\/push-press-icon-128.png"
+        },
+        {
+            "id": 85,
+            "name": "Goblet Squat",
+            "name_url": "goblet-squat",
+            "bodypart": "Legs",
+            "count": 247612,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/goblet-squat\/icons\/goblet-squat-icon-128.png"
+        },
+        {
+            "id": 39,
+            "name": "Dumbbell Fly",
+            "name_url": "dumbbell-fly",
+            "bodypart": "Chest",
+            "count": 245778,
+            "category": "Dumbbell",
+            "aliases": [
+                "Fly",
+                "Dumbbell Chest Fly"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-fly\/icons\/dumbbell-fly-icon-128.png"
+        },
+        {
+            "id": 37,
+            "name": "Lying Leg Curl",
+            "name_url": "lying-leg-curl",
+            "bodypart": "Legs",
+            "count": 244922,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/lying-leg-curl\/icons\/lying-leg-curl-icon-128.png"
+        },
+        {
+            "id": 33,
+            "name": "Decline Bench Press",
+            "name_url": "decline-bench-press",
+            "bodypart": "Chest",
+            "count": 241809,
+            "category": "Barbell",
+            "aliases": [
+                "Decline Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/decline-bench-press\/icons\/decline-bench-press-icon-128.png"
+        },
+        {
+            "id": 50,
+            "name": "T Bar Row",
+            "name_url": "t-bar-row",
+            "bodypart": "Back",
+            "count": 239306,
+            "category": "Barbell",
+            "aliases": [
+                "T-Bar Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/t-bar-row\/icons\/t-bar-row-icon-128.png"
+        },
+        {
+            "id": 58,
+            "name": "Preacher Curl",
+            "name_url": "preacher-curl",
+            "bodypart": "Biceps",
+            "count": 236003,
+            "category": "Barbell",
+            "aliases": [
+                "Barbell Preacher Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/preacher-curl\/icons\/preacher-curl-icon-128.png"
+        },
+        {
+            "id": 40,
+            "name": "Machine Calf Raise",
+            "name_url": "machine-calf-raise",
+            "bodypart": "Legs",
+            "count": 229566,
+            "category": "Machine",
+            "aliases": [
+                "Calf Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-calf-raise\/icons\/machine-calf-raise-icon-128.png"
+        },
+        {
+            "id": 52,
+            "name": "Tricep Rope Pushdown",
+            "name_url": "tricep-rope-pushdown",
+            "bodypart": "Triceps",
+            "count": 221707,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/tricep-rope-pushdown\/icons\/tricep-rope-pushdown-icon-128.png"
+        },
+        {
+            "id": 34,
+            "name": "Dumbbell Shrug",
+            "name_url": "dumbbell-shrug",
+            "bodypart": "Back",
+            "count": 221405,
+            "category": "Dumbbell",
+            "aliases": [
+                "Shoulder Shrug",
+                "Shrug"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-shrug\/icons\/dumbbell-shrug-icon-128.png"
+        },
+        {
+            "id": 57,
+            "name": "Dumbbell Lunge",
+            "name_url": "dumbbell-lunge",
+            "bodypart": "Legs",
+            "count": 215279,
+            "category": "Dumbbell",
+            "aliases": [
+                "Dumbbell Lunges"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-lunge\/icons\/dumbbell-lunge-icon-128.png"
+        },
+        {
+            "id": 3,
+            "name": "Clean and Press",
+            "name_url": "clean-and-press",
+            "bodypart": "Whole Body",
+            "count": 202487,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/clean-and-press\/icons\/clean-and-press-icon-128.png"
+        },
+        {
+            "id": 42,
+            "name": "Dumbbell Tricep Extension",
+            "name_url": "dumbbell-tricep-extension",
+            "bodypart": "Triceps",
+            "count": 194205,
+            "category": "Dumbbell",
+            "aliases": [
+                "One Arm Dumbbell Tricep Extension"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-tricep-extension\/icons\/dumbbell-tricep-extension-icon-128.png"
+        },
+        {
+            "id": 64,
+            "name": "Rack Pull",
+            "name_url": "rack-pull",
+            "bodypart": "Whole Body",
+            "count": 182610,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/rack-pull\/icons\/rack-pull-icon-128.png"
+        },
+        {
+            "id": 201,
+            "name": "Smith Machine Bench Press",
+            "name_url": "smith-machine-bench-press",
+            "bodypart": "Chest",
+            "count": 182536,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/smith-machine-bench-press\/icons\/smith-machine-bench-press-icon-128.png"
+        },
+        {
+            "id": 102,
+            "name": "Cable Bicep Curl",
+            "name_url": "cable-bicep-curl",
+            "bodypart": "Biceps",
+            "count": 174619,
+            "category": "Cable",
+            "aliases": [
+                "Cable Curl",
+                "Biceps Cable Curl",
+                "Standing Cable Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-bicep-curl\/icons\/cable-bicep-curl-icon-128.png"
+        },
+        {
+            "id": 46,
+            "name": "Pendlay Row",
+            "name_url": "pendlay-row",
+            "bodypart": "Back",
+            "count": 173003,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/pendlay-row\/icons\/pendlay-row-icon-128.png"
+        },
+        {
+            "id": 74,
+            "name": "Box Squat",
+            "name_url": "box-squat",
+            "bodypart": "Legs",
+            "count": 162559,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/box-squat\/icons\/box-squat-icon-128.png"
+        },
+        {
+            "id": 81,
+            "name": "Bodyweight Squat",
+            "name_url": "bodyweight-squat",
+            "bodypart": "Legs",
+            "count": 162196,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bodyweight-squat\/icons\/bodyweight-squat-icon-128.png"
+        },
+        {
+            "id": 56,
+            "name": "Dumbbell Concentration Curl",
+            "name_url": "dumbbell-concentration-curl",
+            "bodypart": "Biceps",
+            "count": 160001,
+            "category": "Dumbbell",
+            "aliases": [
+                "Concentration Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-concentration-curl\/icons\/dumbbell-concentration-curl-icon-128.png"
+        },
+        {
+            "id": 110,
+            "name": "Dumbbell Romanian Deadlift",
+            "name_url": "dumbbell-romanian-deadlift",
+            "bodypart": "Whole Body",
+            "count": 159081,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-romanian-deadlift\/icons\/dumbbell-romanian-deadlift-icon-128.png"
+        },
+        {
+            "id": 76,
+            "name": "Vertical Leg Press",
+            "name_url": "vertical-leg-press",
+            "bodypart": "Legs",
+            "count": 158918,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/vertical-leg-press\/icons\/vertical-leg-press-icon-128.png"
+        },
+        {
+            "id": 143,
+            "name": "Machine Row",
+            "name_url": "machine-row",
+            "bodypart": "Back",
+            "count": 157423,
+            "category": "Machine",
+            "aliases": [
+                "Hammer Strength Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-row\/icons\/machine-row-icon-128.png"
+        },
+        {
+            "id": 65,
+            "name": "Bulgarian Split Squat",
+            "name_url": "bulgarian-split-squat",
+            "bodypart": "Legs",
+            "count": 157099,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bulgarian-split-squat\/icons\/bulgarian-split-squat-icon-128.png"
+        },
+        {
+            "id": 87,
+            "name": "Incline Dumbbell Curl",
+            "name_url": "incline-dumbbell-curl",
+            "bodypart": "Biceps",
+            "count": 156898,
+            "category": "Dumbbell",
+            "aliases": [
+                "Incline Curl",
+                "Incline Curl With Dumbbell"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/incline-dumbbell-curl\/icons\/incline-dumbbell-curl-icon-128.png"
+        },
+        {
+            "id": 27,
+            "name": "Upright Row",
+            "name_url": "upright-row",
+            "bodypart": "Shoulders",
+            "count": 155498,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/upright-row\/icons\/upright-row-icon-128.png"
+        },
+        {
+            "id": 30,
+            "name": "Dumbbell Front Raise",
+            "name_url": "dumbbell-front-raise",
+            "bodypart": "Shoulders",
+            "count": 155360,
+            "category": "Dumbbell",
+            "aliases": [
+                "Front Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-front-raise\/icons\/dumbbell-front-raise-icon-128.png"
+        },
+        {
+            "id": 54,
+            "name": "Sit Ups",
+            "name_url": "sit-ups",
+            "bodypart": "Core",
+            "count": 153254,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/sit-ups\/icons\/sit-ups-icon-128.png"
+        },
+        {
+            "id": 96,
+            "name": "Seated Calf Raise",
+            "name_url": "seated-calf-raise",
+            "bodypart": "Legs",
+            "count": 151590,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-calf-raise\/icons\/seated-calf-raise-icon-128.png"
+        },
+        {
+            "id": 104,
+            "name": "Cable Lateral Raise",
+            "name_url": "cable-lateral-raise",
+            "bodypart": "Shoulders",
+            "count": 150725,
+            "category": "Cable",
+            "aliases": [
+                "One Arm Cable Lateral Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-lateral-raise\/icons\/cable-lateral-raise-icon-128.png"
+        },
+        {
+            "id": 41,
+            "name": "Tricep Extension",
+            "name_url": "tricep-extension",
+            "bodypart": "Triceps",
+            "count": 150399,
+            "category": "Barbell",
+            "aliases": [
+                "French Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/tricep-extension\/icons\/tricep-extension-icon-128.png"
+        },
+        {
+            "id": 175,
+            "name": "Smith Machine Squat",
+            "name_url": "smith-machine-squat",
+            "bodypart": "Legs",
+            "count": 147926,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/smith-machine-squat\/icons\/smith-machine-squat-icon-128.png"
+        },
+        {
+            "id": 77,
+            "name": "Arnold Press",
+            "name_url": "arnold-press",
+            "bodypart": "Shoulders",
+            "count": 137770,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/arnold-press\/icons\/arnold-press-icon-128.png"
+        },
+        {
+            "id": 82,
+            "name": "Cable Fly",
+            "name_url": "cable-fly",
+            "bodypart": "Chest",
+            "count": 136317,
+            "category": "Cable",
+            "aliases": [
+                "Cable Middle Fly",
+                "Mid Level Cable Fly",
+                "Middle Cable Chest Fly",
+                "Standing Cable Fly",
+                "Cable Crossover"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-fly\/icons\/cable-fly-icon-128.png"
+        },
+        {
+            "id": 114,
+            "name": "Hang Clean",
+            "name_url": "hang-clean",
+            "bodypart": "Whole Body",
+            "count": 130794,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hang-clean\/icons\/hang-clean-icon-128.png"
+        },
+        {
+            "id": 97,
+            "name": "Stiff Leg Deadlift",
+            "name_url": "stiff-leg-deadlift",
+            "bodypart": "Whole Body",
+            "count": 126078,
+            "category": "Barbell",
+            "aliases": [
+                "Stiff Legged Deadlift",
+                "Straight Legged Deadlift"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/stiff-leg-deadlift\/icons\/stiff-leg-deadlift-icon-128.png"
+        },
+        {
+            "id": 55,
+            "name": "Muscle Ups",
+            "name_url": "muscle-ups",
+            "bodypart": "Whole Body",
+            "count": 125032,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/muscle-ups\/icons\/muscle-ups-icon-128.png"
+        },
+        {
+            "id": 70,
+            "name": "Hip Abduction",
+            "name_url": "hip-abduction",
+            "bodypart": "Legs",
+            "count": 124060,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hip-abduction\/icons\/hip-abduction-icon-128.png"
+        },
+        {
+            "id": 78,
+            "name": "Floor Press",
+            "name_url": "floor-press",
+            "bodypart": "Chest",
+            "count": 122254,
+            "category": "Barbell",
+            "aliases": [
+                "Barbell Floor Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/floor-press\/icons\/floor-press-icon-128.png"
+        },
+        {
+            "id": 98,
+            "name": "Zercher Squat",
+            "name_url": "zercher-squat",
+            "bodypart": "Legs",
+            "count": 120398,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/zercher-squat\/icons\/zercher-squat-icon-128.png"
+        },
+        {
+            "id": 26,
+            "name": "Good Morning",
+            "name_url": "good-morning",
+            "bodypart": "Legs",
+            "count": 119911,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/good-morning\/icons\/good-morning-icon-128.png"
+        },
+        {
+            "id": 72,
+            "name": "Face Pull",
+            "name_url": "face-pull",
+            "bodypart": "Shoulders",
+            "count": 118215,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/face-pull\/icons\/face-pull-icon-128.png"
+        },
+        {
+            "id": 84,
+            "name": "Dumbbell Pullover",
+            "name_url": "dumbbell-pullover",
+            "bodypart": "Back",
+            "count": 114509,
+            "category": "Dumbbell",
+            "aliases": [
+                "Pullover",
+                "Straight Arm Pullover",
+                "Dumbbell Straight Arm Pullover"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-pullover\/icons\/dumbbell-pullover-icon-128.png"
+        },
+        {
+            "id": 43,
+            "name": "Lying Dumbbell Tricep Extension",
+            "name_url": "lying-dumbbell-tricep-extension",
+            "bodypart": "Triceps",
+            "count": 112917,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/lying-dumbbell-tricep-extension\/icons\/lying-dumbbell-tricep-extension-icon-128.png"
+        },
+        {
+            "id": 45,
+            "name": "Incline Dumbbell Fly",
+            "name_url": "incline-dumbbell-fly",
+            "bodypart": "Chest",
+            "count": 112821,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/incline-dumbbell-fly\/icons\/incline-dumbbell-fly-icon-128.png"
+        },
+        {
+            "id": 94,
+            "name": "Wrist Curl",
+            "name_url": "wrist-curl",
+            "bodypart": "Forearms",
+            "count": 111737,
+            "category": "Barbell",
+            "aliases": [
+                "Forearm Curl",
+                "Wrist Curl Palm Up"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/wrist-curl\/icons\/wrist-curl-icon-128.png"
+        },
+        {
+            "id": 79,
+            "name": "Barbell Lunge",
+            "name_url": "barbell-lunge",
+            "bodypart": "Legs",
+            "count": 110495,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-lunge\/icons\/barbell-lunge-icon-128.png"
+        },
+        {
+            "id": 108,
+            "name": "Dumbbell Floor Press",
+            "name_url": "dumbbell-floor-press",
+            "bodypart": "Chest",
+            "count": 109337,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-floor-press\/icons\/dumbbell-floor-press-icon-128.png"
+        },
+        {
+            "id": 127,
+            "name": "Seated Dip Machine",
+            "name_url": "seated-dip-machine",
+            "bodypart": "Triceps",
+            "count": 106927,
+            "category": "Machine",
+            "aliases": [
+                "Seated Dip",
+                "Tricep Press",
+                "Machine Dip",
+                "Machine Tricep Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-dip-machine\/icons\/seated-dip-machine-icon-128.png"
+        },
+        {
+            "id": 93,
+            "name": "Dumbbell Reverse Fly",
+            "name_url": "dumbbell-reverse-fly",
+            "bodypart": "Back",
+            "count": 106443,
+            "category": "Dumbbell",
+            "aliases": [
+                "Rear Delt Fly",
+                "Bent Over Lateral Raise",
+                "Bent Over Raise",
+                "Reverse Fly",
+                "Bent Over Lateral Raise With Dumbbell"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-reverse-fly\/icons\/dumbbell-reverse-fly-icon-128.png"
+        },
+        {
+            "id": 69,
+            "name": "Hip Adduction",
+            "name_url": "hip-adduction",
+            "bodypart": "Legs",
+            "count": 102023,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hip-adduction\/icons\/hip-adduction-icon-128.png"
+        },
+        {
+            "id": 106,
+            "name": "Chest Supported Dumbbell Row",
+            "name_url": "chest-supported-dumbbell-row",
+            "bodypart": "Back",
+            "count": 101076,
+            "category": "Dumbbell",
+            "aliases": [
+                "Chest Supported Row",
+                "Incline Dumbbell Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/chest-supported-dumbbell-row\/icons\/chest-supported-dumbbell-row-icon-128.png"
+        },
+        {
+            "id": 101,
+            "name": "Cable Crunch",
+            "name_url": "cable-crunch",
+            "bodypart": "Core",
+            "count": 97206,
+            "category": "Cable",
+            "aliases": [
+                "Cable Crunches"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-crunch\/icons\/cable-crunch-icon-128.png"
+        },
+        {
+            "id": 61,
+            "name": "Overhead Squat",
+            "name_url": "overhead-squat",
+            "bodypart": "Legs",
+            "count": 94256,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/overhead-squat\/icons\/overhead-squat-icon-128.png"
+        },
+        {
+            "id": 150,
+            "name": "Machine Seated Crunch",
+            "name_url": "machine-seated-crunch",
+            "bodypart": "Core",
+            "count": 93462,
+            "category": "Machine",
+            "aliases": [
+                "Machine Crunches",
+                "Abdominal Crunch"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-seated-crunch\/icons\/machine-seated-crunch-icon-128.png"
+        },
+        {
+            "id": 146,
+            "name": "Machine Bicep Curl",
+            "name_url": "machine-bicep-curl",
+            "bodypart": "Biceps",
+            "count": 92247,
+            "category": "Machine",
+            "aliases": [
+                "Machine Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-bicep-curl\/icons\/machine-bicep-curl-icon-128.png"
+        },
+        {
+            "id": 213,
+            "name": "Barbell Calf Raise",
+            "name_url": "barbell-calf-raise",
+            "bodypart": "Legs",
+            "count": 88547,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-calf-raise\/icons\/barbell-calf-raise-icon-128.png"
+        },
+        {
+            "id": 135,
+            "name": "Dumbbell Squat",
+            "name_url": "dumbbell-squat",
+            "bodypart": "Legs",
+            "count": 88212,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-squat\/icons\/dumbbell-squat-icon-128.png"
+        },
+        {
+            "id": 109,
+            "name": "Dumbbell Tricep Kickback",
+            "name_url": "dumbbell-tricep-kickback",
+            "bodypart": "Triceps",
+            "count": 86660,
+            "category": "Dumbbell",
+            "aliases": [
+                "Tricep Kickback",
+                "Dumbbell Kickback"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-tricep-kickback\/icons\/dumbbell-tricep-kickback-icon-128.png"
+        },
+        {
+            "id": 71,
+            "name": "Power Snatch",
+            "name_url": "power-snatch",
+            "bodypart": "Whole Body",
+            "count": 85499,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/power-snatch\/icons\/power-snatch-icon-128.png"
+        },
+        {
+            "id": 49,
+            "name": "Thruster",
+            "name_url": "thruster",
+            "bodypart": "Whole Body",
+            "count": 84724,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/thruster\/icons\/thruster-icon-128.png"
+        },
+        {
+            "id": 48,
+            "name": "Push Jerk",
+            "name_url": "push-jerk",
+            "bodypart": "Whole Body",
+            "count": 78682,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/push-jerk\/icons\/push-jerk-icon-128.png"
+        },
+        {
+            "id": 120,
+            "name": "Reverse Barbell Curl",
+            "name_url": "reverse-barbell-curl",
+            "bodypart": "Forearms",
+            "count": 78593,
+            "category": "Barbell",
+            "aliases": [
+                "Reverse Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-barbell-curl\/icons\/reverse-barbell-curl-icon-128.png"
+        },
+        {
+            "id": 211,
+            "name": "Close Grip Lat Pulldown",
+            "name_url": "close-grip-lat-pulldown",
+            "bodypart": "Back",
+            "count": 77859,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/close-grip-lat-pulldown\/icons\/close-grip-lat-pulldown-icon-128.png"
+        },
+        {
+            "id": 99,
+            "name": "Split Squat",
+            "name_url": "split-squat",
+            "bodypart": "Legs",
+            "count": 77172,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/split-squat\/icons\/split-squat-icon-128.png"
+        },
+        {
+            "id": 188,
+            "name": "Machine Reverse Fly",
+            "name_url": "machine-reverse-fly",
+            "bodypart": "Back",
+            "count": 75817,
+            "category": "Machine",
+            "aliases": [
+                "Machine Rear Deltoid Fly",
+                "Rear Delt Machine",
+                "Reverse Pec Deck Fly"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-reverse-fly\/icons\/machine-reverse-fly-icon-128.png"
+        },
+        {
+            "id": 53,
+            "name": "Crunches",
+            "name_url": "crunches",
+            "bodypart": "Core",
+            "count": 75613,
+            "category": "Bodyweight",
+            "aliases": [
+                "Ab Crunch"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/crunches\/icons\/crunches-icon-128.png"
+        },
+        {
+            "id": 158,
+            "name": "Paused Bench Press",
+            "name_url": "paused-bench-press",
+            "bodypart": "Chest",
+            "count": 72453,
+            "category": "Barbell",
+            "aliases": [
+                "Pause Bench Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/paused-bench-press\/icons\/paused-bench-press-icon-128.png"
+        },
+        {
+            "id": 75,
+            "name": "Decline Dumbbell Bench Press",
+            "name_url": "decline-dumbbell-bench-press",
+            "bodypart": "Chest",
+            "count": 70947,
+            "category": "Dumbbell",
+            "aliases": [
+                "Decline Dumbbell Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/decline-dumbbell-bench-press\/icons\/decline-dumbbell-bench-press-icon-128.png"
+        },
+        {
+            "id": 145,
+            "name": "Cable Overhead Tricep Extension",
+            "name_url": "cable-overhead-tricep-extension",
+            "bodypart": "Triceps",
+            "count": 69081,
+            "category": "Cable",
+            "aliases": [
+                "Overhead Tricep Cable Extension",
+                "Overhead Cable Tricep Extension",
+                "Tricep Overhead Extension"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-overhead-tricep-extension\/icons\/cable-overhead-tricep-extension-icon-128.png"
+        },
+        {
+            "id": 91,
+            "name": "One Arm Push Ups",
+            "name_url": "one-arm-push-ups",
+            "bodypart": "Chest",
+            "count": 65820,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-push-ups\/icons\/one-arm-push-ups-icon-128.png"
+        },
+        {
+            "id": 185,
+            "name": "Dumbbell Calf Raise",
+            "name_url": "dumbbell-calf-raise",
+            "bodypart": "Legs",
+            "count": 65813,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-calf-raise\/icons\/dumbbell-calf-raise-icon-128.png"
+        },
+        {
+            "id": 203,
+            "name": "Strict Curl",
+            "name_url": "strict-curl",
+            "bodypart": "Biceps",
+            "count": 64960,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/strict-curl\/icons\/strict-curl-icon-128.png"
+        },
+        {
+            "id": 95,
+            "name": "Reverse Wrist Curl",
+            "name_url": "reverse-wrist-curl",
+            "bodypart": "Forearms",
+            "count": 64868,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-wrist-curl\/icons\/reverse-wrist-curl-icon-128.png"
+        },
+        {
+            "id": 103,
+            "name": "One Arm Cable Bicep Curl",
+            "name_url": "one-arm-cable-bicep-curl",
+            "bodypart": "Biceps",
+            "count": 63922,
+            "category": "Cable",
+            "aliases": [
+                "One Arm Cable Curl",
+                "Behind The Back Cable Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-cable-bicep-curl\/icons\/one-arm-cable-bicep-curl-icon-128.png"
+        },
+        {
+            "id": 137,
+            "name": "Dumbbell Deadlift",
+            "name_url": "dumbbell-deadlift",
+            "bodypart": "Whole Body",
+            "count": 61825,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-deadlift\/icons\/dumbbell-deadlift-icon-128.png"
+        },
+        {
+            "id": 254,
+            "name": "Machine Tricep Extension",
+            "name_url": "machine-tricep-extension",
+            "bodypart": "Triceps",
+            "count": 61335,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-tricep-extension\/icons\/machine-tricep-extension-icon-128.png"
+        },
+        {
+            "id": 121,
+            "name": "Reverse Grip Bench Press",
+            "name_url": "reverse-grip-bench-press",
+            "bodypart": "Chest",
+            "count": 60139,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-grip-bench-press\/icons\/reverse-grip-bench-press-icon-128.png"
+        },
+        {
+            "id": 105,
+            "name": "Cable Pull Through",
+            "name_url": "cable-pull-through",
+            "bodypart": "Legs",
+            "count": 59001,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-pull-through\/icons\/cable-pull-through-icon-128.png"
+        },
+        {
+            "id": 187,
+            "name": "Dumbbell Wrist Curl",
+            "name_url": "dumbbell-wrist-curl",
+            "bodypart": "Forearms",
+            "count": 59000,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-wrist-curl\/icons\/dumbbell-wrist-curl-icon-128.png"
+        },
+        {
+            "id": 182,
+            "name": "Standing Leg Curl",
+            "name_url": "standing-leg-curl",
+            "bodypart": "Legs",
+            "count": 58068,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/standing-leg-curl\/icons\/standing-leg-curl-icon-128.png"
+        },
+        {
+            "id": 169,
+            "name": "Barbell Reverse Lunge",
+            "name_url": "barbell-reverse-lunge",
+            "bodypart": "Legs",
+            "count": 57154,
+            "category": "Barbell",
+            "aliases": [
+                "Barbell Rear Lunge"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-reverse-lunge\/icons\/barbell-reverse-lunge-icon-128.png"
+        },
+        {
+            "id": 88,
+            "name": "Landmine Squat",
+            "name_url": "landmine-squat",
+            "bodypart": "Legs",
+            "count": 56833,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/landmine-squat\/icons\/landmine-squat-icon-128.png"
+        },
+        {
+            "id": 107,
+            "name": "Diamond Push Ups",
+            "name_url": "diamond-push-ups",
+            "bodypart": "Chest",
+            "count": 56076,
+            "category": "Bodyweight",
+            "aliases": [
+                "Diamond Pushups"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/diamond-push-ups\/icons\/diamond-push-ups-icon-128.png"
+        },
+        {
+            "id": 168,
+            "name": "Barbell Glute Bridge",
+            "name_url": "barbell-glute-bridge",
+            "bodypart": "Legs",
+            "count": 55097,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-glute-bridge\/icons\/barbell-glute-bridge-icon-128.png"
+        },
+        {
+            "id": 197,
+            "name": "Reverse Grip Lat Pulldown",
+            "name_url": "reverse-grip-lat-pulldown",
+            "bodypart": "Back",
+            "count": 54896,
+            "category": "Cable",
+            "aliases": [
+                "Reverse Grip Pulldown",
+                "Palm Up Pulldown"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-grip-lat-pulldown\/icons\/reverse-grip-lat-pulldown-icon-128.png"
+        },
+        {
+            "id": 191,
+            "name": "Single Leg Press",
+            "name_url": "single-leg-press",
+            "bodypart": "Legs",
+            "count": 54709,
+            "category": "Machine",
+            "aliases": [
+                "Single Leg Leg Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/single-leg-press\/icons\/single-leg-press-icon-128.png"
+        },
+        {
+            "id": 212,
+            "name": "Sled Press Calf Raise",
+            "name_url": "sled-press-calf-raise",
+            "bodypart": "Legs",
+            "count": 53821,
+            "category": "Machine",
+            "aliases": [
+                "Leg Press Calf Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/sled-press-calf-raise\/icons\/sled-press-calf-raise-icon-128.png"
+        },
+        {
+            "id": 160,
+            "name": "One Arm Dumbbell Preacher Curl",
+            "name_url": "one-arm-dumbbell-preacher-curl",
+            "bodypart": "Biceps",
+            "count": 51179,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-dumbbell-preacher-curl\/icons\/one-arm-dumbbell-preacher-curl-icon-128.png"
+        },
+        {
+            "id": 62,
+            "name": "Single Leg Squat",
+            "name_url": "single-leg-squat",
+            "bodypart": "Legs",
+            "count": 50369,
+            "category": "Bodyweight",
+            "aliases": [
+                "Skater Squat"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/single-leg-squat\/icons\/single-leg-squat-icon-128.png"
+        },
+        {
+            "id": 118,
+            "name": "Neutral Grip Pull Ups",
+            "name_url": "neutral-grip-pull-ups",
+            "bodypart": "Back",
+            "count": 50216,
+            "category": "Bodyweight",
+            "aliases": [
+                "Parallel Grip Pull Ups",
+                "Hammer Pull Ups"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/neutral-grip-pull-ups\/icons\/neutral-grip-pull-ups-icon-128.png"
+        },
+        {
+            "id": 173,
+            "name": "Neck Curl",
+            "name_url": "neck-curl",
+            "bodypart": "Shoulders",
+            "count": 49524,
+            "category": "Barbell",
+            "aliases": [
+                "Neck Flexion"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/neck-curl\/icons\/neck-curl-icon-128.png"
+        },
+        {
+            "id": 128,
+            "name": "Deficit Deadlift",
+            "name_url": "deficit-deadlift",
+            "bodypart": "Whole Body",
+            "count": 47749,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/deficit-deadlift\/icons\/deficit-deadlift-icon-128.png"
+        },
+        {
+            "id": 149,
+            "name": "Belt Squat",
+            "name_url": "belt-squat",
+            "bodypart": "Legs",
+            "count": 47435,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/belt-squat\/icons\/belt-squat-icon-128.png"
+        },
+        {
+            "id": 264,
+            "name": "Seated Dumbbell Tricep Extension",
+            "name_url": "seated-dumbbell-tricep-extension",
+            "bodypart": "Triceps",
+            "count": 46949,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-dumbbell-tricep-extension\/icons\/seated-dumbbell-tricep-extension-icon-128.png"
+        },
+        {
+            "id": 134,
+            "name": "Straight Arm Pulldown",
+            "name_url": "straight-arm-pulldown",
+            "bodypart": "Back",
+            "count": 46586,
+            "category": "Cable",
+            "aliases": [
+                "Straight Arm Lat Pulldown"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/straight-arm-pulldown\/icons\/straight-arm-pulldown-icon-128.png"
+        },
+        {
+            "id": 215,
+            "name": "Machine Lateral Raise",
+            "name_url": "machine-lateral-raise",
+            "bodypart": "Shoulders",
+            "count": 46114,
+            "category": "Machine",
+            "aliases": [
+                "Nautilus Lateral Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-lateral-raise\/icons\/machine-lateral-raise-icon-128.png"
+        },
+        {
+            "id": 165,
+            "name": "Dumbbell Upright Row",
+            "name_url": "dumbbell-upright-row",
+            "bodypart": "Shoulders",
+            "count": 45842,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-upright-row\/icons\/dumbbell-upright-row-icon-128.png"
+        },
+        {
+            "id": 129,
+            "name": "Safety Bar Squat",
+            "name_url": "safety-bar-squat",
+            "bodypart": "Legs",
+            "count": 45572,
+            "category": "Barbell",
+            "aliases": [
+                "Ssb Squat",
+                "Safety Squat Bar",
+                "Safety Squat",
+                "Safety Squat Bar Squat"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/safety-bar-squat\/icons\/safety-bar-squat-icon-128.png"
+        },
+        {
+            "id": 184,
+            "name": "Close Grip Dumbbell Bench Press",
+            "name_url": "close-grip-dumbbell-bench-press",
+            "bodypart": "Chest",
+            "count": 43240,
+            "category": "Dumbbell",
+            "aliases": [
+                "Close Grip Dumbbell Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/close-grip-dumbbell-bench-press\/icons\/close-grip-dumbbell-bench-press-icon-128.png"
+        },
+        {
+            "id": 209,
+            "name": "Pistol Squat",
+            "name_url": "pistol-squat",
+            "bodypart": "Legs",
+            "count": 43034,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/pistol-squat\/icons\/pistol-squat-icon-128.png"
+        },
+        {
+            "id": 226,
+            "name": "Bent Over Dumbbell Row",
+            "name_url": "bent-over-dumbbell-row",
+            "bodypart": "Back",
+            "count": 42824,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bent-over-dumbbell-row\/icons\/bent-over-dumbbell-row-icon-128.png"
+        },
+        {
+            "id": 100,
+            "name": "Back Extension",
+            "name_url": "back-extension",
+            "bodypart": "Back",
+            "count": 42729,
+            "category": "Bodyweight",
+            "aliases": [
+                "Hyper Extension",
+                "Hyperextension"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/back-extension\/icons\/back-extension-icon-128.png"
+        },
+        {
+            "id": 86,
+            "name": "Handstand Push Ups",
+            "name_url": "handstand-push-ups",
+            "bodypart": "Shoulders",
+            "count": 42699,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/handstand-push-ups\/icons\/handstand-push-ups-icon-128.png"
+        },
+        {
+            "id": 183,
+            "name": "Behind The Neck Press",
+            "name_url": "behind-the-neck-press",
+            "bodypart": "Shoulders",
+            "count": 42642,
+            "category": "Barbell",
+            "aliases": [
+                "Back Press",
+                "Press Behind Neck"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/behind-the-neck-press\/icons\/behind-the-neck-press-icon-128.png"
+        },
+        {
+            "id": 179,
+            "name": "Cable Reverse Fly",
+            "name_url": "cable-reverse-fly",
+            "bodypart": "Back",
+            "count": 42065,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-reverse-fly\/icons\/cable-reverse-fly-icon-128.png"
+        },
+        {
+            "id": 133,
+            "name": "Yates Row",
+            "name_url": "yates-row",
+            "bodypart": "Back",
+            "count": 41653,
+            "category": "Barbell",
+            "aliases": [
+                "Reverse Grip Bent Over Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/yates-row\/icons\/yates-row-icon-128.png"
+        },
+        {
+            "id": 147,
+            "name": "Pause Squat",
+            "name_url": "pause-squat",
+            "bodypart": "Legs",
+            "count": 40319,
+            "category": "Barbell",
+            "aliases": [
+                "Paused Squat"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/pause-squat\/icons\/pause-squat-icon-128.png"
+        },
+        {
+            "id": 177,
+            "name": "Barbell Front Raise",
+            "name_url": "barbell-front-raise",
+            "bodypart": "Shoulders",
+            "count": 39865,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-front-raise\/icons\/barbell-front-raise-icon-128.png"
+        },
+        {
+            "id": 142,
+            "name": "Barbell Hack Squat",
+            "name_url": "barbell-hack-squat",
+            "bodypart": "Legs",
+            "count": 38874,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-hack-squat\/icons\/barbell-hack-squat-icon-128.png"
+        },
+        {
+            "id": 180,
+            "name": "Machine Back Extension",
+            "name_url": "machine-back-extension",
+            "bodypart": "Back",
+            "count": 37797,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-back-extension\/icons\/machine-back-extension-icon-128.png"
+        },
+        {
+            "id": 189,
+            "name": "Bench Pin Press",
+            "name_url": "bench-pin-press",
+            "bodypart": "Chest",
+            "count": 37556,
+            "category": "Barbell",
+            "aliases": [
+                "Pin Press",
+                "Barbell Pin Press",
+                "Pin Bench Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bench-pin-press\/icons\/bench-pin-press-icon-128.png"
+        },
+        {
+            "id": 139,
+            "name": "Bench Pull",
+            "name_url": "bench-pull",
+            "bodypart": "Back",
+            "count": 37457,
+            "category": "Barbell",
+            "aliases": [
+                "Seal Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bench-pull\/icons\/bench-pull-icon-128.png"
+        },
+        {
+            "id": 161,
+            "name": "Single Leg Romanian Deadlift",
+            "name_url": "single-leg-romanian-deadlift",
+            "bodypart": "Whole Body",
+            "count": 36865,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/single-leg-romanian-deadlift\/icons\/single-leg-romanian-deadlift-icon-128.png"
+        },
+        {
+            "id": 126,
+            "name": "Log Press",
+            "name_url": "log-press",
+            "bodypart": "Shoulders",
+            "count": 36852,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/log-press\/icons\/log-press-icon-128.png"
+        },
+        {
+            "id": 73,
+            "name": "Burpees",
+            "name_url": "burpees",
+            "bodypart": "Whole Body",
+            "count": 36672,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/burpees\/icons\/burpees-icon-128.png"
+        },
+        {
+            "id": 144,
+            "name": "Sumo Squat",
+            "name_url": "sumo-squat",
+            "bodypart": "Legs",
+            "count": 36286,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/sumo-squat\/icons\/sumo-squat-icon-128.png"
+        },
+        {
+            "id": 171,
+            "name": "Hang Power Clean",
+            "name_url": "hang-power-clean",
+            "bodypart": "Whole Body",
+            "count": 36141,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hang-power-clean\/icons\/hang-power-clean-icon-128.png"
+        },
+        {
+            "id": 186,
+            "name": "Dumbbell Side Bend",
+            "name_url": "dumbbell-side-bend",
+            "bodypart": "Core",
+            "count": 36021,
+            "category": "Dumbbell",
+            "aliases": [
+                "Side Bend"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-side-bend\/icons\/dumbbell-side-bend-icon-128.png"
+        },
+        {
+            "id": 136,
+            "name": "Split Jerk",
+            "name_url": "split-jerk",
+            "bodypart": "Whole Body",
+            "count": 35742,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/split-jerk\/icons\/split-jerk-icon-128.png"
+        },
+        {
+            "id": 155,
+            "name": "Dumbbell Snatch",
+            "name_url": "dumbbell-snatch",
+            "bodypart": "Whole Body",
+            "count": 32359,
+            "category": "Dumbbell",
+            "aliases": [
+                "One Arm Dumbbell Snatch"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-snatch\/icons\/dumbbell-snatch-icon-128.png"
+        },
+        {
+            "id": 166,
+            "name": "Clean High Pull",
+            "name_url": "clean-high-pull",
+            "bodypart": "Whole Body",
+            "count": 31702,
+            "category": "Barbell",
+            "aliases": [
+                "High Pull"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/clean-high-pull\/icons\/clean-high-pull-icon-128.png"
+        },
+        {
+            "id": 214,
+            "name": "Incline Hammer Curl",
+            "name_url": "incline-hammer-curl",
+            "bodypart": "Biceps",
+            "count": 31468,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/incline-hammer-curl\/icons\/incline-hammer-curl-icon-128.png"
+        },
+        {
+            "id": 130,
+            "name": "Snatch Deadlift",
+            "name_url": "snatch-deadlift",
+            "bodypart": "Whole Body",
+            "count": 31402,
+            "category": "Barbell",
+            "aliases": [
+                "Snatch Deadlift",
+                "Snatch Grip Deadlift"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/snatch-deadlift\/icons\/snatch-deadlift-icon-128.png"
+        },
+        {
+            "id": 125,
+            "name": "Cable Woodchopper",
+            "name_url": "cable-woodchopper",
+            "bodypart": "Core",
+            "count": 30192,
+            "category": "Cable",
+            "aliases": [
+                "Wood Chopper",
+                "Cable Wood Chop",
+                "Cable Woodchoppers"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-woodchopper\/icons\/cable-woodchopper-icon-128.png"
+        },
+        {
+            "id": 178,
+            "name": "Barbell Pullover",
+            "name_url": "barbell-pullover",
+            "bodypart": "Back",
+            "count": 29374,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-pullover\/icons\/barbell-pullover-icon-128.png"
+        },
+        {
+            "id": 159,
+            "name": "Cable Kickback",
+            "name_url": "cable-kickback",
+            "bodypart": "Legs",
+            "count": 29372,
+            "category": "Cable",
+            "aliases": [
+                "Cable Standing Glute Kickback"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-kickback\/icons\/cable-kickback-icon-128.png"
+        },
+        {
+            "id": 157,
+            "name": "Clean Pull",
+            "name_url": "clean-pull",
+            "bodypart": "Whole Body",
+            "count": 28688,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/clean-pull\/icons\/clean-pull-icon-128.png"
+        },
+        {
+            "id": 164,
+            "name": "Bodyweight Calf Raise",
+            "name_url": "bodyweight-calf-raise",
+            "bodypart": "Legs",
+            "count": 28048,
+            "category": "Bodyweight",
+            "aliases": [
+                "Standing Calf Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bodyweight-calf-raise\/icons\/bodyweight-calf-raise-icon-128.png"
+        },
+        {
+            "id": 195,
+            "name": "Pause Deadlift",
+            "name_url": "pause-deadlift",
+            "bodypart": "Whole Body",
+            "count": 27787,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/pause-deadlift\/icons\/pause-deadlift-icon-128.png"
+        },
+        {
+            "id": 119,
+            "name": "One Arm Pull Ups",
+            "name_url": "one-arm-pull-ups",
+            "bodypart": "Back",
+            "count": 27723,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-pull-ups\/icons\/one-arm-pull-ups-icon-128.png"
+        },
+        {
+            "id": 202,
+            "name": "Spider Curl",
+            "name_url": "spider-curl",
+            "bodypart": "Biceps",
+            "count": 27505,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/spider-curl\/icons\/spider-curl-icon-128.png"
+        },
+        {
+            "id": 132,
+            "name": "Landmine Press",
+            "name_url": "landmine-press",
+            "bodypart": "Shoulders",
+            "count": 27420,
+            "category": "Barbell",
+            "aliases": [
+                "Landmine Chest Press",
+                "Standing Landmine Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/landmine-press\/icons\/landmine-press-icon-128.png"
+        },
+        {
+            "id": 115,
+            "name": "Hanging Leg Raise",
+            "name_url": "hanging-leg-raise",
+            "bodypart": "Core",
+            "count": 27354,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hanging-leg-raise\/icons\/hanging-leg-raise-icon-128.png"
+        },
+        {
+            "id": 194,
+            "name": "JM Press",
+            "name_url": "jm-press",
+            "bodypart": "Triceps",
+            "count": 26641,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/jm-press\/icons\/jm-press-icon-128.png"
+        },
+        {
+            "id": 198,
+            "name": "Reverse Grip Tricep Pushdown",
+            "name_url": "reverse-grip-tricep-pushdown",
+            "bodypart": "Triceps",
+            "count": 26437,
+            "category": "Cable",
+            "aliases": [
+                "Reverse Grip Tricep Extension"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-grip-tricep-pushdown\/icons\/reverse-grip-tricep-pushdown-icon-128.png"
+        },
+        {
+            "id": 174,
+            "name": "Neck Extension",
+            "name_url": "neck-extension",
+            "bodypart": "Shoulders",
+            "count": 26023,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/neck-extension\/icons\/neck-extension-icon-128.png"
+        },
+        {
+            "id": 193,
+            "name": "Wide Grip Bench Press",
+            "name_url": "wide-grip-bench-press",
+            "bodypart": "Chest",
+            "count": 25750,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/wide-grip-bench-press\/icons\/wide-grip-bench-press-icon-128.png"
+        },
+        {
+            "id": 156,
+            "name": "Single Leg Deadlift",
+            "name_url": "single-leg-deadlift",
+            "bodypart": "Whole Body",
+            "count": 25748,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/single-leg-deadlift\/icons\/single-leg-deadlift-icon-128.png"
+        },
+        {
+            "id": 172,
+            "name": "Muscle Snatch",
+            "name_url": "muscle-snatch",
+            "bodypart": "Whole Body",
+            "count": 25506,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/muscle-snatch\/icons\/muscle-snatch-icon-128.png"
+        },
+        {
+            "id": 162,
+            "name": "Zottman Curl",
+            "name_url": "zottman-curl",
+            "bodypart": "Biceps",
+            "count": 25034,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/zottman-curl\/icons\/zottman-curl-icon-128.png"
+        },
+        {
+            "id": 131,
+            "name": "Jefferson Deadlift",
+            "name_url": "jefferson-deadlift",
+            "bodypart": "Whole Body",
+            "count": 25023,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/jefferson-deadlift\/icons\/jefferson-deadlift-icon-128.png"
+        },
+        {
+            "id": 116,
+            "name": "Inverted Row",
+            "name_url": "inverted-row",
+            "bodypart": "Back",
+            "count": 24879,
+            "category": "Bodyweight",
+            "aliases": [
+                "Supine Row",
+                "Australian Pull Ups"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/inverted-row\/icons\/inverted-row-icon-128.png"
+        },
+        {
+            "id": 80,
+            "name": "Lunge",
+            "name_url": "lunge",
+            "bodypart": "Legs",
+            "count": 24866,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/lunge\/icons\/lunge-icon-128.png"
+        },
+        {
+            "id": 220,
+            "name": "Seated Dumbbell Curl",
+            "name_url": "seated-dumbbell-curl",
+            "bodypart": "Biceps",
+            "count": 24081,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/seated-dumbbell-curl\/icons\/seated-dumbbell-curl-icon-128.png"
+        },
+        {
+            "id": 140,
+            "name": "Dumbbell Bench Pull",
+            "name_url": "dumbbell-bench-pull",
+            "bodypart": "Back",
+            "count": 24046,
+            "category": "Dumbbell",
+            "aliases": [
+                "Dumbbell Seal Row"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-bench-pull\/icons\/dumbbell-bench-pull-icon-128.png"
+        },
+        {
+            "id": 151,
+            "name": "Renegade Row",
+            "name_url": "renegade-row",
+            "bodypart": "Back",
+            "count": 23813,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/renegade-row\/icons\/renegade-row-icon-128.png"
+        },
+        {
+            "id": 152,
+            "name": "Z Press",
+            "name_url": "z-press",
+            "bodypart": "Shoulders",
+            "count": 23639,
+            "category": "Barbell",
+            "aliases": [
+                "Zydrunas Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/z-press\/icons\/z-press-icon-128.png"
+        },
+        {
+            "id": 122,
+            "name": "Russian Twist",
+            "name_url": "russian-twist",
+            "bodypart": "Core",
+            "count": 22829,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/russian-twist\/icons\/russian-twist-icon-128.png"
+        },
+        {
+            "id": 204,
+            "name": "Viking Press",
+            "name_url": "viking-press",
+            "bodypart": "Shoulders",
+            "count": 22630,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/viking-press\/icons\/viking-press-icon-128.png"
+        },
+        {
+            "id": 112,
+            "name": "Glute Bridge",
+            "name_url": "glute-bridge",
+            "bodypart": "Legs",
+            "count": 22293,
+            "category": "Bodyweight",
+            "aliases": [
+                "Bridging",
+                "Bridge"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/glute-bridge\/icons\/glute-bridge-icon-128.png"
+        },
+        {
+            "id": 235,
+            "name": "Decline Push Up",
+            "name_url": "decline-push-up",
+            "bodypart": "Chest",
+            "count": 21927,
+            "category": "Bodyweight",
+            "aliases": [
+                "Decline Press Up"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/decline-push-up\/icons\/decline-push-up-icon-128.png"
+        },
+        {
+            "id": 210,
+            "name": "Tate Press",
+            "name_url": "tate-press",
+            "bodypart": "Triceps",
+            "count": 21821,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/tate-press\/icons\/tate-press-icon-128.png"
+        },
+        {
+            "id": 190,
+            "name": "Shoulder Pin Press",
+            "name_url": "shoulder-pin-press",
+            "bodypart": "Shoulders",
+            "count": 21365,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/shoulder-pin-press\/icons\/shoulder-pin-press-icon-128.png"
+        },
+        {
+            "id": 208,
+            "name": "Pin Squat",
+            "name_url": "pin-squat",
+            "bodypart": "Legs",
+            "count": 20490,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/pin-squat\/icons\/pin-squat-icon-128.png"
+        },
+        {
+            "id": 167,
+            "name": "Snatch Pull",
+            "name_url": "snatch-pull",
+            "bodypart": "Whole Body",
+            "count": 20462,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/snatch-pull\/icons\/snatch-pull-icon-128.png"
+        },
+        {
+            "id": 117,
+            "name": "Lying Leg Raise",
+            "name_url": "lying-leg-raise",
+            "bodypart": "Core",
+            "count": 20101,
+            "category": "Bodyweight",
+            "aliases": [
+                "Leg Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/lying-leg-raise\/icons\/lying-leg-raise-icon-128.png"
+        },
+        {
+            "id": 298,
+            "name": "One Arm Lat Pulldown",
+            "name_url": "one-arm-lat-pulldown",
+            "bodypart": "Back",
+            "count": 19567,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-lat-pulldown\/icons\/one-arm-lat-pulldown-icon-128.png"
+        },
+        {
+            "id": 141,
+            "name": "Ring Dips",
+            "name_url": "ring-dips",
+            "bodypart": "Triceps",
+            "count": 19545,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/ring-dips\/icons\/ring-dips-icon-128.png"
+        },
+        {
+            "id": 153,
+            "name": "Dumbbell Z Press",
+            "name_url": "dumbbell-z-press",
+            "bodypart": "Shoulders",
+            "count": 19484,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-z-press\/icons\/dumbbell-z-press-icon-128.png"
+        },
+        {
+            "id": 170,
+            "name": "Bench Dips",
+            "name_url": "bench-dips",
+            "bodypart": "Triceps",
+            "count": 18770,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bench-dips\/icons\/bench-dips-icon-128.png"
+        },
+        {
+            "id": 217,
+            "name": "Cheat Curl",
+            "name_url": "cheat-curl",
+            "bodypart": "Biceps",
+            "count": 18592,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cheat-curl\/icons\/cheat-curl-icon-128.png"
+        },
+        {
+            "id": 176,
+            "name": "Wall Ball",
+            "name_url": "wall-ball",
+            "bodypart": "Whole Body",
+            "count": 17559,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/wall-ball\/icons\/wall-ball-icon-128.png"
+        },
+        {
+            "id": 240,
+            "name": "Dumbbell Reverse Wrist Curl",
+            "name_url": "dumbbell-reverse-wrist-curl",
+            "bodypart": "Forearms",
+            "count": 17279,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-reverse-wrist-curl\/icons\/dumbbell-reverse-wrist-curl-icon-128.png"
+        },
+        {
+            "id": 271,
+            "name": "Walking Lunge",
+            "name_url": "walking-lunge",
+            "bodypart": "Legs",
+            "count": 16979,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/walking-lunge\/icons\/walking-lunge-icon-128.png"
+        },
+        {
+            "id": 236,
+            "name": "Dumbbell Front Squat",
+            "name_url": "dumbbell-front-squat",
+            "bodypart": "Legs",
+            "count": 16896,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-front-squat\/icons\/dumbbell-front-squat-icon-128.png"
+        },
+        {
+            "id": 257,
+            "name": "One Arm Seated Cable Row",
+            "name_url": "one-arm-seated-cable-row",
+            "bodypart": "Back",
+            "count": 16248,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-seated-cable-row\/icons\/one-arm-seated-cable-row-icon-128.png"
+        },
+        {
+            "id": 245,
+            "name": "Decline Sit Up",
+            "name_url": "decline-sit-up",
+            "bodypart": "Core",
+            "count": 14404,
+            "category": "Bodyweight",
+            "aliases": [
+                "Incline Bench Sit Up"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/decline-sit-up\/icons\/decline-sit-up-icon-128.png"
+        },
+        {
+            "id": 281,
+            "name": "Close Grip Incline Bench Press",
+            "name_url": "close-grip-incline-bench-press",
+            "bodypart": "Chest",
+            "count": 13214,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/close-grip-incline-bench-press\/icons\/close-grip-incline-bench-press-icon-128.png"
+        },
+        {
+            "id": 289,
+            "name": "Cable Hammer Curl",
+            "name_url": "cable-hammer-curl",
+            "bodypart": "Biceps",
+            "count": 13111,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-hammer-curl\/icons\/cable-hammer-curl-icon-128.png"
+        },
+        {
+            "id": 206,
+            "name": "Hanging Knee Raise",
+            "name_url": "hanging-knee-raise",
+            "bodypart": "Core",
+            "count": 12596,
+            "category": "Bodyweight",
+            "aliases": [
+                "Knee Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hanging-knee-raise\/icons\/hanging-knee-raise-icon-128.png"
+        },
+        {
+            "id": 292,
+            "name": "Dumbbell Split Squat",
+            "name_url": "dumbbell-split-squat",
+            "bodypart": "Legs",
+            "count": 11914,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-split-squat\/icons\/dumbbell-split-squat-icon-128.png"
+        },
+        {
+            "id": 163,
+            "name": "Ab Wheel Rollout",
+            "name_url": "ab-wheel-rollout",
+            "bodypart": "Core",
+            "count": 11910,
+            "category": "Bodyweight",
+            "aliases": [
+                "Ab Wheel",
+                "Ab Roller"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/ab-wheel-rollout\/icons\/ab-wheel-rollout-icon-128.png"
+        },
+        {
+            "id": 199,
+            "name": "Reverse Lunge",
+            "name_url": "reverse-lunge",
+            "bodypart": "Legs",
+            "count": 11116,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-lunge\/icons\/reverse-lunge-icon-128.png"
+        },
+        {
+            "id": 277,
+            "name": "Dumbbell Reverse Curl",
+            "name_url": "dumbbell-reverse-curl",
+            "bodypart": "Forearms",
+            "count": 10080,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-reverse-curl\/icons\/dumbbell-reverse-curl-icon-128.png"
+        },
+        {
+            "id": 249,
+            "name": "Squat Jump",
+            "name_url": "squat-jump",
+            "bodypart": "Legs",
+            "count": 10009,
+            "category": "Bodyweight",
+            "aliases": [
+                "Squat Jumps",
+                "Jump Squat"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/squat-jump\/icons\/squat-jump-icon-128.png"
+        },
+        {
+            "id": 231,
+            "name": "Cable Upright Row",
+            "name_url": "cable-upright-row",
+            "bodypart": "Back",
+            "count": 9850,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-upright-row\/icons\/cable-upright-row-icon-128.png"
+        },
+        {
+            "id": 124,
+            "name": "Toes To Bar",
+            "name_url": "toes-to-bar",
+            "bodypart": "Core",
+            "count": 9041,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/toes-to-bar\/icons\/toes-to-bar-icon-128.png"
+        },
+        {
+            "id": 253,
+            "name": "Machine Shrug",
+            "name_url": "machine-shrug",
+            "bodypart": "Back",
+            "count": 8930,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/machine-shrug\/icons\/machine-shrug-icon-128.png"
+        },
+        {
+            "id": 287,
+            "name": "Zercher Deadlift",
+            "name_url": "zercher-deadlift",
+            "bodypart": "Whole Body",
+            "count": 8857,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/zercher-deadlift\/icons\/zercher-deadlift-icon-128.png"
+        },
+        {
+            "id": 207,
+            "name": "Nordic Hamstring Curl",
+            "name_url": "nordic-hamstring-curl",
+            "bodypart": "Legs",
+            "count": 8782,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/nordic-hamstring-curl\/icons\/nordic-hamstring-curl-icon-128.png"
+        },
+        {
+            "id": 275,
+            "name": "One Arm Landmine Press",
+            "name_url": "one-arm-landmine-press",
+            "bodypart": "Shoulders",
+            "count": 8416,
+            "category": "Barbell",
+            "aliases": [
+                "Single Arm Landmine Press"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-landmine-press\/icons\/one-arm-landmine-press-icon-128.png"
+        },
+        {
+            "id": 228,
+            "name": "Dumbbell External Rotation",
+            "name_url": "dumbbell-external-rotation",
+            "bodypart": "Shoulders",
+            "count": 8283,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-external-rotation\/icons\/dumbbell-external-rotation-icon-128.png"
+        },
+        {
+            "id": 233,
+            "name": "Decline Crunch",
+            "name_url": "decline-crunch",
+            "bodypart": "Core",
+            "count": 7791,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/decline-crunch\/icons\/decline-crunch-icon-128.png"
+        },
+        {
+            "id": 259,
+            "name": "Pike Push Up",
+            "name_url": "pike-push-up",
+            "bodypart": "Shoulders",
+            "count": 7716,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/pike-push-up\/icons\/pike-push-up-icon-128.png"
+        },
+        {
+            "id": 279,
+            "name": "Hex Bar Shrug",
+            "name_url": "hex-bar-shrug",
+            "bodypart": "Back",
+            "count": 7701,
+            "category": "Barbell",
+            "aliases": [
+                "Trap Bar Shrug"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hex-bar-shrug\/icons\/hex-bar-shrug-icon-128.png"
+        },
+        {
+            "id": 250,
+            "name": "Jumping Jack",
+            "name_url": "jumping-jack",
+            "bodypart": "Core",
+            "count": 7593,
+            "category": "Bodyweight",
+            "aliases": [
+                "Star Jump"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/jumping-jack\/icons\/jumping-jack-icon-128.png"
+        },
+        {
+            "id": 239,
+            "name": "Dumbbell Push Press",
+            "name_url": "dumbbell-push-press",
+            "bodypart": "Shoulders",
+            "count": 7317,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-push-press\/icons\/dumbbell-push-press-icon-128.png"
+        },
+        {
+            "id": 247,
+            "name": "Incline Push Up",
+            "name_url": "incline-push-up",
+            "bodypart": "Chest",
+            "count": 7145,
+            "category": "Bodyweight",
+            "aliases": [
+                "Incline Press Up"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/incline-push-up\/icons\/incline-push-up-icon-128.png"
+        },
+        {
+            "id": 291,
+            "name": "Dumbbell Face Pull",
+            "name_url": "dumbbell-face-pull",
+            "bodypart": "Shoulders",
+            "count": 7137,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-face-pull\/icons\/dumbbell-face-pull-icon-128.png"
+        },
+        {
+            "id": 219,
+            "name": "Close Grip Push Up",
+            "name_url": "close-grip-push-up",
+            "bodypart": "Chest",
+            "count": 6863,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/close-grip-push-up\/icons\/close-grip-push-up-icon-128.png"
+        },
+        {
+            "id": 266,
+            "name": "Smith Machine Shrug",
+            "name_url": "smith-machine-shrug",
+            "bodypart": "Back",
+            "count": 6686,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/smith-machine-shrug\/icons\/smith-machine-shrug-icon-128.png"
+        },
+        {
+            "id": 285,
+            "name": "Single Leg Dumbbell Deadlift",
+            "name_url": "single-leg-dumbbell-deadlift",
+            "bodypart": "Whole Body",
+            "count": 6646,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/single-leg-dumbbell-deadlift\/icons\/single-leg-dumbbell-deadlift-icon-128.png"
+        },
+        {
+            "id": 272,
+            "name": "Dumbbell Incline Y Raise",
+            "name_url": "dumbbell-incline-y-raise",
+            "bodypart": "Back",
+            "count": 6451,
+            "category": "Dumbbell",
+            "aliases": [
+                "Y Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-incline-y-raise\/icons\/dumbbell-incline-y-raise-icon-128.png"
+        },
+        {
+            "id": 221,
+            "name": "Sissy Squat",
+            "name_url": "sissy-squat",
+            "bodypart": "Legs",
+            "count": 6440,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/sissy-squat\/icons\/sissy-squat-icon-128.png"
+        },
+        {
+            "id": 278,
+            "name": "Half Squat",
+            "name_url": "half-squat",
+            "bodypart": "Legs",
+            "count": 5653,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/half-squat\/icons\/half-squat-icon-128.png"
+        },
+        {
+            "id": 273,
+            "name": "Archer Push Ups",
+            "name_url": "archer-push-ups",
+            "bodypart": "Chest",
+            "count": 5270,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/archer-push-ups\/icons\/archer-push-ups-icon-128.png"
+        },
+        {
+            "id": 230,
+            "name": "Cable Shrug",
+            "name_url": "cable-shrug",
+            "bodypart": "Back",
+            "count": 5093,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-shrug\/icons\/cable-shrug-icon-128.png"
+        },
+        {
+            "id": 265,
+            "name": "Single Leg Seated Calf Raise",
+            "name_url": "single-leg-seated-calf-raise",
+            "bodypart": "Legs",
+            "count": 5067,
+            "category": "Machine",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/single-leg-seated-calf-raise\/icons\/single-leg-seated-calf-raise-icon-128.png"
+        },
+        {
+            "id": 113,
+            "name": "Glute Ham Raise",
+            "name_url": "glute-ham-raise",
+            "bodypart": "Legs",
+            "count": 5055,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/glute-ham-raise\/icons\/glute-ham-raise-icon-128.png"
+        },
+        {
+            "id": 229,
+            "name": "Cable Leg Extension",
+            "name_url": "cable-leg-extension",
+            "bodypart": "Legs",
+            "count": 5033,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-leg-extension\/icons\/cable-leg-extension-icon-128.png"
+        },
+        {
+            "id": 225,
+            "name": "Bicycle Crunch",
+            "name_url": "bicycle-crunch",
+            "bodypart": "Core",
+            "count": 4954,
+            "category": "Bodyweight",
+            "aliases": [
+                "Twisting Crunch",
+                "Air Bike"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bicycle-crunch\/icons\/bicycle-crunch-icon-128.png"
+        },
+        {
+            "id": 290,
+            "name": "Dumbbell Clean and Press",
+            "name_url": "dumbbell-clean-and-press",
+            "bodypart": "Whole Body",
+            "count": 4908,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-clean-and-press\/icons\/dumbbell-clean-and-press-icon-128.png"
+        },
+        {
+            "id": 222,
+            "name": "Barbell Power Shrug",
+            "name_url": "barbell-power-shrug",
+            "bodypart": "Back",
+            "count": 4772,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/barbell-power-shrug\/icons\/barbell-power-shrug-icon-128.png"
+        },
+        {
+            "id": 218,
+            "name": "Bent Arm Barbell Pullover",
+            "name_url": "bent-arm-barbell-pullover",
+            "bodypart": "Back",
+            "count": 4761,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/bent-arm-barbell-pullover\/icons\/bent-arm-barbell-pullover-icon-128.png"
+        },
+        {
+            "id": 227,
+            "name": "Cable External Rotation",
+            "name_url": "cable-external-rotation",
+            "bodypart": "Shoulders",
+            "count": 4318,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/cable-external-rotation\/icons\/cable-external-rotation-icon-128.png"
+        },
+        {
+            "id": 196,
+            "name": "Reverse Crunches",
+            "name_url": "reverse-crunches",
+            "bodypart": "Core",
+            "count": 4295,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-crunches\/icons\/reverse-crunches-icon-128.png"
+        },
+        {
+            "id": 263,
+            "name": "Side Lunge",
+            "name_url": "side-lunge",
+            "bodypart": "Legs",
+            "count": 4054,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/side-lunge\/icons\/side-lunge-icon-128.png"
+        },
+        {
+            "id": 274,
+            "name": "Meadows Row",
+            "name_url": "meadows-row",
+            "bodypart": "Back",
+            "count": 4034,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/meadows-row\/icons\/meadows-row-icon-128.png"
+        },
+        {
+            "id": 200,
+            "name": "Ring Muscle Ups",
+            "name_url": "ring-muscle-ups",
+            "bodypart": "Whole Body",
+            "count": 3984,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/ring-muscle-ups\/icons\/ring-muscle-ups-icon-128.png"
+        },
+        {
+            "id": 256,
+            "name": "One Arm Pulldown",
+            "name_url": "one-arm-pulldown",
+            "bodypart": "Biceps",
+            "count": 3485,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/one-arm-pulldown\/icons\/one-arm-pulldown-icon-128.png"
+        },
+        {
+            "id": 223,
+            "name": "Behind The Back Barbell Shrug",
+            "name_url": "behind-the-back-barbell-shrug",
+            "bodypart": "Back",
+            "count": 3410,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/behind-the-back-barbell-shrug\/icons\/behind-the-back-barbell-shrug-icon-128.png"
+        },
+        {
+            "id": 276,
+            "name": "Spoto Press",
+            "name_url": "spoto-press",
+            "bodypart": "Chest",
+            "count": 3250,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/spoto-press\/icons\/spoto-press-icon-128.png"
+        },
+        {
+            "id": 293,
+            "name": "Dumbbell Thruster",
+            "name_url": "dumbbell-thruster",
+            "bodypart": "Whole Body",
+            "count": 3188,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-thruster\/icons\/dumbbell-thruster-icon-128.png"
+        },
+        {
+            "id": 294,
+            "name": "Hang Snatch",
+            "name_url": "hang-snatch",
+            "bodypart": "Whole Body",
+            "count": 3180,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hang-snatch\/icons\/hang-snatch-icon-128.png"
+        },
+        {
+            "id": 283,
+            "name": "Glute Kickback",
+            "name_url": "glute-kickback",
+            "bodypart": "Legs",
+            "count": 3120,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/glute-kickback\/icons\/glute-kickback-icon-128.png"
+        },
+        {
+            "id": 234,
+            "name": "Decline Dumbbell Fly",
+            "name_url": "decline-dumbbell-fly",
+            "bodypart": "Chest",
+            "count": 3010,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/decline-dumbbell-fly\/icons\/decline-dumbbell-fly-icon-128.png"
+        },
+        {
+            "id": 238,
+            "name": "Dumbbell High Pull",
+            "name_url": "dumbbell-high-pull",
+            "bodypart": "Whole Body",
+            "count": 2910,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-high-pull\/icons\/dumbbell-high-pull-icon-128.png"
+        },
+        {
+            "id": 243,
+            "name": "Flutter Kicks",
+            "name_url": "flutter-kicks",
+            "bodypart": "Core",
+            "count": 2831,
+            "category": "Bodyweight",
+            "aliases": [
+                "Flutter Kicks",
+                "Flutter Kick"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/flutter-kicks\/icons\/flutter-kicks-icon-128.png"
+        },
+        {
+            "id": 216,
+            "name": "Donkey Calf Raise",
+            "name_url": "donkey-calf-raise",
+            "bodypart": "Legs",
+            "count": 2755,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/donkey-calf-raise\/icons\/donkey-calf-raise-icon-128.png"
+        },
+        {
+            "id": 255,
+            "name": "Mountain Climbers",
+            "name_url": "mountain-climbers",
+            "bodypart": "Core",
+            "count": 2737,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/mountain-climbers\/icons\/mountain-climbers-icon-128.png"
+        },
+        {
+            "id": 237,
+            "name": "Dumbbell Hang Clean",
+            "name_url": "dumbbell-hang-clean",
+            "bodypart": "Whole Body",
+            "count": 2321,
+            "category": "Dumbbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-hang-clean\/icons\/dumbbell-hang-clean-icon-128.png"
+        },
+        {
+            "id": 288,
+            "name": "Behind The Back Deadlift",
+            "name_url": "behind-the-back-deadlift",
+            "bodypart": "Whole Body",
+            "count": 2311,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/behind-the-back-deadlift\/icons\/behind-the-back-deadlift-icon-128.png"
+        },
+        {
+            "id": 297,
+            "name": "Dumbbell Walking Calf Raise",
+            "name_url": "dumbbell-walking-calf-raise",
+            "bodypart": "Legs",
+            "count": 2245,
+            "category": "Dumbbell",
+            "aliases": [
+                "Walking Calf Raise"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/dumbbell-walking-calf-raise\/icons\/dumbbell-walking-calf-raise-icon-128.png"
+        },
+        {
+            "id": 154,
+            "name": "High Pulley Crunch",
+            "name_url": "high-pulley-crunch",
+            "bodypart": "Core",
+            "count": 2220,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/high-pulley-crunch\/icons\/high-pulley-crunch-icon-128.png"
+        },
+        {
+            "id": 232,
+            "name": "Clap Pull Up",
+            "name_url": "clap-pull-up",
+            "bodypart": "Whole Body",
+            "count": 2147,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/clap-pull-up\/icons\/clap-pull-up-icon-128.png"
+        },
+        {
+            "id": 269,
+            "name": "Standing Cable Crunch",
+            "name_url": "standing-cable-crunch",
+            "bodypart": "Core",
+            "count": 2118,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/standing-cable-crunch\/icons\/standing-cable-crunch-icon-128.png"
+        },
+        {
+            "id": 284,
+            "name": "Reverse Hyperextension",
+            "name_url": "reverse-hyperextension",
+            "bodypart": "Back",
+            "count": 1846,
+            "category": "Bodyweight",
+            "aliases": [
+                "Reverse Hyper"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/reverse-hyperextension\/icons\/reverse-hyperextension-icon-128.png"
+        },
+        {
+            "id": 286,
+            "name": "Superman",
+            "name_url": "superman",
+            "bodypart": "Core",
+            "count": 1834,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/superman\/icons\/superman-icon-128.png"
+        },
+        {
+            "id": 251,
+            "name": "Side Leg Raise",
+            "name_url": "side-leg-raise",
+            "bodypart": "Legs",
+            "count": 1820,
+            "category": "Bodyweight",
+            "aliases": [
+                "Side Leg Lift"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/side-leg-raise\/icons\/side-leg-raise-icon-128.png"
+        },
+        {
+            "id": 258,
+            "name": "Overhead Cable Curl",
+            "name_url": "overhead-cable-curl",
+            "bodypart": "Biceps",
+            "count": 1730,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/overhead-cable-curl\/icons\/overhead-cable-curl-icon-128.png"
+        },
+        {
+            "id": 262,
+            "name": "Side Crunch",
+            "name_url": "side-crunch",
+            "bodypart": "Core",
+            "count": 1575,
+            "category": "Bodyweight",
+            "aliases": [
+                "Oblique Crunch"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/side-crunch\/icons\/side-crunch-icon-128.png"
+        },
+        {
+            "id": 260,
+            "name": "Roman Chair Side Bend",
+            "name_url": "roman-chair-side-bend",
+            "bodypart": "Core",
+            "count": 1502,
+            "category": "Bodyweight",
+            "aliases": [
+                "45 Degree Side Bend"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/roman-chair-side-bend\/icons\/roman-chair-side-bend-icon-128.png"
+        },
+        {
+            "id": 248,
+            "name": "Jefferson Squat",
+            "name_url": "jefferson-squat",
+            "bodypart": "Legs",
+            "count": 1358,
+            "category": "Barbell",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/jefferson-squat\/icons\/jefferson-squat-icon-128.png"
+        },
+        {
+            "id": 241,
+            "name": "Floor Hip Abduction",
+            "name_url": "floor-hip-abduction",
+            "bodypart": "Legs",
+            "count": 1355,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/floor-hip-abduction\/icons\/floor-hip-abduction-icon-128.png"
+        },
+        {
+            "id": 244,
+            "name": "Hip Extension",
+            "name_url": "hip-extension",
+            "bodypart": "Legs",
+            "count": 1283,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/hip-extension\/icons\/hip-extension-icon-128.png"
+        },
+        {
+            "id": 268,
+            "name": "Squat Thrust",
+            "name_url": "squat-thrust",
+            "bodypart": "Whole Body",
+            "count": 1263,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/squat-thrust\/icons\/squat-thrust-icon-128.png"
+        },
+        {
+            "id": 246,
+            "name": "Incline Cable Curl",
+            "name_url": "incline-cable-curl",
+            "bodypart": "Biceps",
+            "count": 1241,
+            "category": "Cable",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/incline-cable-curl\/icons\/incline-cable-curl-icon-128.png"
+        },
+        {
+            "id": 295,
+            "name": "Scissor Kicks",
+            "name_url": "scissor-kicks",
+            "bodypart": "Core",
+            "count": 1074,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/scissor-kicks\/icons\/scissor-kicks-icon-128.png"
+        },
+        {
+            "id": 252,
+            "name": "Lying Cable Curl",
+            "name_url": "lying-cable-curl",
+            "bodypart": "Biceps",
+            "count": 656,
+            "category": "Cable",
+            "aliases": [
+                "Low Pulley Lying Cable Curl"
+            ],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/lying-cable-curl\/icons\/lying-cable-curl-icon-128.png"
+        },
+        {
+            "id": 242,
+            "name": "Floor Hip Extension",
+            "name_url": "floor-hip-extension",
+            "bodypart": "Legs",
+            "count": 643,
+            "category": "Bodyweight",
+            "aliases": [],
+            "icon_url": "https:\/\/static.strengthlevel.com\/images\/exercises\/floor-hip-extension\/icons\/floor-hip-extension-icon-128.png"
+        }
+    ],
+    "meta": {
+        "count": 287
+    }
+}

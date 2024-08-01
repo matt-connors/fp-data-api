@@ -157,9 +157,9 @@ export default class extends WorkerEntrypoint {
             table: 'UserRole',
             data: {
                 userId: data.id,
-                roleId: 11 // TODO: manually add a default role for testing
+                roleId: 85 // TODO: manually add a default role for testing
             },
             db
         })
     }
-};
+}; 

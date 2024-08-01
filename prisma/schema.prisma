@@ -30,8 +30,8 @@ enum Resource {
 }
 
 enum ProgramType {
-    Library
-    Custom
+    LIBRARY
+    CUSTOM
 }
 
 // Auth-related models
@@ -96,7 +96,7 @@ model Exercise {
 model Program {
     id               Int               @id @default(autoincrement())
     type             ProgramType
-    name             String            @unique
+    name             String            
     description      String
     trainerPrograms  TrainerProgram[]
     createdAt        DateTime          @default(now())

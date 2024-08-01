@@ -18,8 +18,8 @@ export const Resource = {
 } as const;
 export type Resource = (typeof Resource)[keyof typeof Resource];
 export const ProgramType = {
-    Library: "Library",
-    Custom: "Custom"
+    LIBRARY: "LIBRARY",
+    CUSTOM: "CUSTOM"
 } as const;
 export type ProgramType = (typeof ProgramType)[keyof typeof ProgramType];
 export type Exercise = {
@@ -63,7 +63,7 @@ export type Role = {
 export type Trainer = {
     id: Generated<number>;
 };
-export type TrainerPrograms = {
+export type TrainerProgram = {
     id: Generated<number>;
     trainerId: number;
     programId: number;
@@ -94,7 +94,7 @@ export type DB = {
     ProgramExercise: ProgramExercise;
     Role: Role;
     Trainer: Trainer;
-    TrainerPrograms: TrainerPrograms;
+    TrainerProgram: TrainerProgram;
     User: User;
     UserProgram: UserProgram;
     UserRole: UserRole;

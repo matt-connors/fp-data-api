@@ -317,11 +317,11 @@
           "hasDefaultValue": false
         },
         {
-          "name": "TrainerPrograms",
-          "type": "TrainerPrograms",
+          "name": "TrainerProgram",
+          "type": "TrainerProgram",
           "isRequired": false,
           "kind": "object",
-          "relationName": "TrainerProgramsToProgram",
+          "relationName": "TrainerProgramToProgram",
           "relationFromFields": [],
           "relationToFields": [],
           "isList": true,
@@ -350,13 +350,6 @@
           "name": "Program_pkey",
           "fields": [
             "id"
-          ],
-          "nullNotDistinct": false
-        },
-        {
-          "name": "Program_name_key",
-          "fields": [
-            "name"
           ],
           "nullNotDistinct": false
         }
@@ -620,11 +613,11 @@
           "maxLength": null
         },
         {
-          "name": "TrainerPrograms",
-          "type": "TrainerPrograms",
+          "name": "TrainerProgram",
+          "type": "TrainerProgram",
           "isRequired": false,
           "kind": "object",
-          "relationName": "TrainerProgramsToTrainer",
+          "relationName": "TrainerProgramToTrainer",
           "relationFromFields": [],
           "relationToFields": [],
           "isList": true,
@@ -658,13 +651,13 @@
         }
       ]
     },
-    "TrainerPrograms": {
-      "id": "public.TrainerPrograms",
+    "TrainerProgram": {
+      "id": "public.TrainerProgram",
       "schemaName": "public",
-      "tableName": "TrainerPrograms",
+      "tableName": "TrainerProgram",
       "fields": [
         {
-          "id": "public.TrainerPrograms.id",
+          "id": "public.TrainerProgram.id",
           "name": "id",
           "columnName": "id",
           "type": "int4",
@@ -673,7 +666,7 @@
           "isList": false,
           "isGenerated": false,
           "sequence": {
-            "identifier": "\"public\".\"TrainerPrograms_id_seq\"",
+            "identifier": "\"public\".\"TrainerProgram_id_seq\"",
             "increment": 1,
             "start": 1
           },
@@ -682,7 +675,7 @@
           "maxLength": null
         },
         {
-          "id": "public.TrainerPrograms.trainerId",
+          "id": "public.TrainerProgram.trainerId",
           "name": "trainerId",
           "columnName": "trainerId",
           "type": "int4",
@@ -696,7 +689,7 @@
           "maxLength": null
         },
         {
-          "id": "public.TrainerPrograms.programId",
+          "id": "public.TrainerProgram.programId",
           "name": "programId",
           "columnName": "programId",
           "type": "int4",
@@ -714,7 +707,7 @@
           "type": "Program",
           "isRequired": true,
           "kind": "object",
-          "relationName": "TrainerProgramsToProgram",
+          "relationName": "TrainerProgramToProgram",
           "relationFromFields": [
             "programId"
           ],
@@ -732,7 +725,7 @@
           "type": "Trainer",
           "isRequired": true,
           "kind": "object",
-          "relationName": "TrainerProgramsToTrainer",
+          "relationName": "TrainerProgramToTrainer",
           "relationFromFields": [
             "trainerId"
           ],
@@ -748,7 +741,7 @@
       ],
       "uniqueConstraints": [
         {
-          "name": "TrainerPrograms_pkey",
+          "name": "TrainerProgram_pkey",
           "fields": [
             "id"
           ],
@@ -5475,10 +5468,10 @@
       "schemaName": "public",
       "values": [
         {
-          "name": "Custom"
+          "name": "CUSTOM"
         },
         {
-          "name": "Library"
+          "name": "LIBRARY"
         }
       ]
     },
