@@ -47,7 +47,7 @@
     "ts-node": "^10.9.2",
     "tsx": "^4.16.2",
     "typescript": "^5.5.4",
-    "wrangler": "^3.0.0"
+    "wrangler": "^3.64.0"
   },
   "@snaplet/seed": {
     "config": "prisma\\seed\\seed.config.ts"
