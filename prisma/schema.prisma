@@ -69,6 +69,10 @@ model UserRole {
 model User {
     id            String       @id
     email         String       @unique
+    firstName     String?
+    lastName      String?
+    phoneNumber   String?
+    country       String?
     createdAt     DateTime     @default(now())
     userRoles     UserRole[]
     trainerId     Int?
@@ -78,9 +82,11 @@ model User {
 }
 
 model Trainer {
-    id              Int               @id @default(autoincrement())
-    users           User[]
-    trainerPrograms TrainerProgram[]
+    id                Int              @id @default(autoincrement())
+    businessName      String
+    authorizedUserIds String[]
+    users             User[]
+    trainerPrograms   TrainerProgram[]
 }
 
 model Exercise {
@@ -90,13 +96,13 @@ model Exercise {
     aliases          String[]
     category         String
     programExercises ProgramExercise[]
-    // iconUrl          String
+    iconUrl          String
 }
 
 model Program {
     id               Int               @id @default(autoincrement())
     type             ProgramType
-    name             String            
+    name             String
     description      String
     trainerPrograms  TrainerProgram[]
     createdAt        DateTime          @default(now())

@@ -28,6 +28,7 @@ export type Exercise = {
     bodyPart: string;
     aliases: string[];
     category: string;
+    iconUrl: string;
 };
 export type Permission = {
     id: Generated<number>;
@@ -62,6 +63,8 @@ export type Role = {
 };
 export type Trainer = {
     id: Generated<number>;
+    businessName: string;
+    authorizedUserIds: string[];
 };
 export type TrainerProgram = {
     id: Generated<number>;
@@ -71,6 +74,10 @@ export type TrainerProgram = {
 export type User = {
     id: string;
     email: string;
+    firstName: string | null;
+    lastName: string | null;
+    phoneNumber: string | null;
+    country: string | null;
     createdAt: Generated<Timestamp>;
     trainerId: number | null;
     userProgramId: number | null;

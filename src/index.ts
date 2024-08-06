@@ -15,7 +15,7 @@ import { createContext } from "./context";
 
 import { WorkerEntrypoint } from "cloudflare:workers";
 
-import { getUserPermissions, appendToDatabase } from './utils';
+import { getUserPermissions, appendToDatabase, updateDatabase } from './utils';
 
 export interface Env {
     "fitness-db": Hyperdrive;
@@ -138,7 +138,6 @@ export default class extends WorkerEntrypoint {
     async createUser(data: { id: string, [key: string]: any }) {
         let context = this._createContext();
         let db = context.db;
-        console.log('data ->', data);
 
         if (!data.id) {
             throw new Error('User ID is required.');
@@ -149,7 +148,7 @@ export default class extends WorkerEntrypoint {
             table: 'User',
             data,
             db
-        }),
+        });
 
         // Add a new UserRole to the database
         // Note that this must be done sequentially in order to reference the new user's ID
@@ -157,9 +156,57 @@ export default class extends WorkerEntrypoint {
             table: 'UserRole',
             data: {
                 userId: data.id,
-                roleId: 85 // TODO: manually add a default role for testing
+                roleId: 12 // TODO: manually add a default role for testing
             },
             db
         })
+    }
+
+    /**
+     * Initialize a user who has signed up as a trainer
+     */
+    async initializeTrainer(
+        id: string,
+        data: {
+            "Business Name": string,
+            "First Name": string,
+            "Last Name": string,
+            "Phone Number": string,
+            "Country": string
+        }) {
+        let context = this._createContext();
+        let db = context.db;
+
+        if (!id) {
+            throw new Error('User ID is required.');
+        }
+
+        console.log('(data) --->', data);
+
+        // Create a new trainer in the database
+        const trainer = await appendToDatabase({
+            table: 'Trainer',
+            data: {
+                businessName: data["Business Name"],
+                authorizedUserIds: [id],
+            },
+            db
+        });
+
+        console.log('(trainer) --->', trainer);
+
+        // Update the user database with the new information
+        await updateDatabase({
+            table: 'User',
+            key: id,
+            data: {
+                trainerId: trainer.id,
+                firstName: data["First Name"],
+                lastName: data["Last Name"],
+                phoneNumber: data["Phone Number"],
+                country: data["Country"]
+            },
+            db
+        });
     }
 }; 

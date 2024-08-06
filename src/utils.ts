@@ -51,7 +51,12 @@ export const updateDatabase = ({ table, key, data, db }: { table: string, key: s
     .updateTable(table)
     .set(data)
     .where('id', '=', key)
-    .executeTakeFirst();
+    .returningAll()
+    .executeTakeFirst()
+    .catch((error: any) => {
+        console.error(`Error appending to the database: ${error}`);
+        return null;
+    });
 
 /**
  * Append a record to the database
@@ -59,4 +64,9 @@ export const updateDatabase = ({ table, key, data, db }: { table: string, key: s
 export const appendToDatabase = ({ table, data, db }: { table: string, data: { [key: string]: any }, db: any }) => db
     .insertInto(table)
     .values(data)
-    .executeTakeFirst();
+    .returningAll()
+    .executeTakeFirst()
+    .catch((error: any) => {
+        console.error(`Error appending to the database: ${error}`);
+        return null;
+    });

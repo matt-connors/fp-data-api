@@ -28,6 +28,14 @@
         "confidenceContext": 0
       },
       {
+        "input": "public exercise icon_url",
+        "column": "iconUrl",
+        "shape": "URL",
+        "confidence": 0.7798164486885071,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
         "input": "public exercise name",
         "column": "name",
         "shape": "COMMERCE_PRODUCT_NAME",
@@ -103,8 +111,38 @@
   },
   {
     "schemaName": "public",
+    "tableName": "Trainer",
+    "predictions": [
+      {
+        "input": "public trainer authorized_user_ids",
+        "column": "authorizedUserIds",
+        "shape": "UUID",
+        "confidence": 0.9971989393234253,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "public trainer business_name",
+        "column": "businessName",
+        "shape": "COMPANY_NAME",
+        "confidence": 0.9734328389167786,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      }
+    ]
+  },
+  {
+    "schemaName": "public",
     "tableName": "User",
     "predictions": [
+      {
+        "input": "public user country",
+        "column": "country",
+        "shape": "COUNTRY",
+        "confidence": 0.9761695861816406,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
       {
         "input": "public user email",
         "column": "email",
@@ -114,10 +152,34 @@
         "confidenceContext": 0
       },
       {
+        "input": "public user first_name",
+        "column": "firstName",
+        "shape": "PERSON_FIRST_NAME",
+        "confidence": 0.9833793044090271,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
         "input": "public user id",
         "column": "id",
         "shape": "UUID",
         "confidence": 0.9964122176170349,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "public user last_name",
+        "column": "lastName",
+        "shape": "PERSON_LAST_NAME",
+        "confidence": 0.9846183657646179,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "public user phone_number",
+        "column": "phoneNumber",
+        "shape": "PHONE_NUMBER",
+        "confidence": 0.9720039367675781,
         "context": "GENERAL",
         "confidenceContext": 0
       }

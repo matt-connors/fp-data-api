@@ -30,6 +30,7 @@ const exercises = (require('./data/exercises.json')).data.map((exercise: any) =>
     bodyPart: exercise.bodypart,
     category: exercise.category,
     aliases: exercise.aliases,
+    iconUrl: `https://fp-dashboard.pages.dev/images/exercises/${exercise.name_url}.png`
 }));
 
 
@@ -81,6 +82,7 @@ const main = async () => {
         bodyPart: exercises[index].bodyPart,
         category: exercises[index].category,
         aliases: exercises[index].aliases,
+        iconUrl: exercises[index].iconUrl
     })));
 
     /**
@@ -108,12 +110,19 @@ const main = async () => {
      */
     console.log('Seeding trainers...');
     await seed.trainer(x => x(3, () => ({
+        businessName: faker.company.name(),
+        authorizedUserIds: [],
         /**
          * Users
          */
         users: (x: any) => x({ min: 3, max: 6 }, () => ({
             email: faker.internet.email(),
             id: faker.string.uuid(),
+            firstName: faker.person.firstName(),
+            lastName: faker.person.lastName(),
+            phoneNumber: faker.phone.number(),
+            country: faker.location.country(),
+
             /**
              * UserRoles
              */

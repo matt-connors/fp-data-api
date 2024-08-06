@@ -24,6 +24,15 @@ const programWithExercises = (eb: ExpressionBuilder<DB, 'Program'>) => jsonArray
         .whereRef('ProgramExercise.programId', '=', 'Program.id')
 ).as('programExercises');
 
+/**
+ * Relation between Program and UserProgram
+ */
+const programWithUserPrograms = (eb: ExpressionBuilder<DB, 'Program'>) => jsonArrayFrom(
+    eb.selectFrom('UserProgram')
+        .selectAll()
+        .whereRef('UserProgram.programId', '=', 'Program.id')
+).as('userPrograms');
+
 builder.queryFields((t) => ({
     /**
      * Get a specific program by ID
@@ -42,6 +51,7 @@ builder.queryFields((t) => ({
             .selectAll()
             .where('id', '=', programId)
             .select(programWithExercises)
+            .select(programWithUserPrograms)
             .executeTakeFirst()
             .then((result: any) => {
                 return result.map((program: any) => {
@@ -69,6 +79,7 @@ builder.queryFields((t) => ({
             .selectAll()
             .where('type', '=', 'LIBRARY')
             .select(programWithExercises)
+            .select(programWithUserPrograms)
             .execute()
             .then((result: any) => {
                 return result.map((program: any) => {
