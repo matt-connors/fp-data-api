@@ -12,6 +12,7 @@ TrainerType.implement({
         id: t.exposeID('id'),
         users: t.expose('users', { type: [UserType] }),
         trainerPrograms: t.expose('trainerPrograms', { type: [TrainerProgramsType] }),
+        businessName: t.exposeString('businessName'),
     }),
 
 });
