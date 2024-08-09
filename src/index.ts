@@ -93,6 +93,7 @@ const yoga = createYoga<Env>({
         return {
             ...context,
             permissions,
+            userId
         };
     }
 })
@@ -181,8 +182,6 @@ export default class extends WorkerEntrypoint {
             throw new Error('User ID is required.');
         }
 
-        console.log('(data) --->', data);
-
         // Create a new trainer in the database
         const trainer = await appendToDatabase({
             table: 'Trainer',
@@ -192,8 +191,6 @@ export default class extends WorkerEntrypoint {
             },
             db
         });
-
-        console.log('(trainer) --->', trainer);
 
         // Update the user database with the new information
         await updateDatabase({

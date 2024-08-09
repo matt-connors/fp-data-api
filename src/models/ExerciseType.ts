@@ -13,6 +13,7 @@ ExerciseType.implement({
         bodyPart: t.exposeString('bodyPart'),
         aliases: t.expose('aliases', { type: ['String'] }),
         category: t.exposeString('category'),
-        programExercise: t.expose('programExercise', { type: ProgramExerciseType })
+        programExercise: t.expose('programExercise', { type: ProgramExerciseType }),
+        iconUrl: t.exposeString('iconUrl')
     }),
 });

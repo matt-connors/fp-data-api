@@ -1,4 +1,4 @@
-import type { ExpressionBuilder } from 'kysely'
+import { sql, type ExpressionBuilder } from 'kysely'
 import { jsonArrayFrom, jsonObjectFrom } from 'kysely/helpers/postgres'
 import { Resource, builder } from '../../builder'
 
@@ -18,11 +18,29 @@ const programWithExercises = (eb: ExpressionBuilder<DB, 'Program'>) => jsonArray
             'Exercise.aliases',
             'Exercise.bodyPart',
             'Exercise.category',
-            // 'Exercise.iconUrl',
+            'Exercise.iconUrl',
         ])
         .innerJoin('ProgramExercise', 'Exercise.id', 'ProgramExercise.exerciseId')
         .whereRef('ProgramExercise.programId', '=', 'Program.id')
 ).as('programExercises');
+
+/**
+ * Relation between User, Trainer, TrainerProgram and Program
+ * 
+ * User[] -> Trainer -> TrainerPrograms[] -> Program
+ * 
+ */
+const userWithPrograms = (eb: ExpressionBuilder<DB, 'User'>) => jsonArrayFrom(
+    eb.selectFrom('Trainer')
+        .selectAll()
+        // @ts-ignore
+        .where('Trainer.authorizedUserIds', '@>', sql`ARRAY[${eb.ref('User.id')}]`)
+        // .where(eb => eb.raw('Trainer.authorizedUserIds @> ARRAY[User.id]'))
+        .innerJoin('TrainerProgram', 'Trainer.id', 'TrainerProgram.trainerId')
+        .innerJoin('Program', 'TrainerProgram.programId', 'Program.id')
+        .select(programWithExercises)
+        .select(programWithUserPrograms)
+).as('programs');
 
 /**
  * Relation between Program and UserProgram
@@ -83,6 +101,35 @@ builder.queryFields((t) => ({
             .execute()
             .then((result: any) => {
                 return result.map((program: any) => {
+                    return {
+                        ...program,
+                        programExercises: program.programExercises.map((exercise: any) => ({
+                            exercise: exercise
+                        }))
+                    }
+                })
+            })
+        )
+    }),
+    /**
+     * Get all programs created by the current user
+     */
+    myPrograms: t.field({
+        type: [ProgramType],
+        authScopes: generateAuthScopes({
+            resource: 'TEST',
+            action: 'VIEW'
+        }),
+        resolve: executeQuery((db, {}, ctx) => db
+            .selectFrom('User')
+            .selectAll()
+            .where('id', '=', ctx.userId)
+            .select(userWithPrograms)
+            // .select(programWithExercises)
+            // .select(programWithUserPrograms)
+            .execute()
+            .then((result: any) => {
+                return result[0].programs.map((program: any) => {
                     return {
                         ...program,
                         programExercises: program.programExercises.map((exercise: any) => ({
