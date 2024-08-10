@@ -25,6 +25,31 @@ const programWithExercises = (eb: ExpressionBuilder<DB, 'Program'>) => jsonArray
 ).as('programExercises');
 
 /**
+ * Relation between Program, ProgramExercise and Exercise
+ */
+const programWithProgramExercises = (eb: ExpressionBuilder<DB, 'Program'>) => jsonArrayFrom(
+    eb.selectFrom('ProgramExercise')
+        .selectAll()
+        .whereRef('ProgramExercise.programId', '=', 'Program.id')
+        .select(
+            (eb: ExpressionBuilder<DB, 'Program'>) => jsonObjectFrom(
+                eb.selectFrom('Exercise')
+                    .select([
+                        'Exercise.id',
+                        'Exercise.name',
+                        'Exercise.aliases',
+                        'Exercise.bodyPart',
+                        'Exercise.category',
+                        'Exercise.iconUrl',
+                    ])
+                    // @ts-ignore
+                    .whereRef('Exercise.id', '=', 'ProgramExercise.exerciseId')
+            ).as('exercise')
+        )
+).as('programExercises');
+
+
+/**
  * Relation between User, Trainer, TrainerProgram and Program
  * 
  * User[] -> Trainer -> TrainerPrograms[] -> Program
@@ -35,7 +60,6 @@ const userWithPrograms = (eb: ExpressionBuilder<DB, 'User'>) => jsonArrayFrom(
         .selectAll()
         // @ts-ignore
         .where('Trainer.authorizedUserIds', '@>', sql`ARRAY[${eb.ref('User.id')}]`)
-        // .where(eb => eb.raw('Trainer.authorizedUserIds @> ARRAY[User.id]'))
         .innerJoin('TrainerProgram', 'Trainer.id', 'TrainerProgram.trainerId')
         .innerJoin('Program', 'TrainerProgram.programId', 'Program.id')
         .select(programWithExercises)
@@ -68,19 +92,9 @@ builder.queryFields((t) => ({
             .selectFrom('Program')
             .selectAll()
             .where('id', '=', programId)
-            .select(programWithExercises)
+            .select(programWithProgramExercises)
             .select(programWithUserPrograms)
             .executeTakeFirst()
-            .then((result: any) => {
-                return result.map((program: any) => {
-                    return {
-                        ...program,
-                        trainerProgram: program.programExercises.map((exercise: any) => ({
-                            program: [exercise]
-                        }))
-                    }
-                })
-            })
         )
     }),
     /**
@@ -120,7 +134,7 @@ builder.queryFields((t) => ({
             resource: 'TEST',
             action: 'VIEW'
         }),
-        resolve: executeQuery((db, {}, ctx) => db
+        resolve: executeQuery((db, { }, ctx) => db
             .selectFrom('User')
             .selectAll()
             .where('id', '=', ctx.userId)
