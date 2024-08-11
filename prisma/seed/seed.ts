@@ -361,6 +361,15 @@ const main = async () => {
         }), { connect: { exercise } })
     })), { connect: { exercise } });
 
+    const { users } = await seed.user(x => x(8, () => ({
+        email: faker.internet.email(),
+        id: faker.string.uuid(),
+        firstName: faker.person.firstName(),
+        lastName: faker.person.lastName(),
+        phoneNumber: faker.phone.number(),
+        country: faker.location.country(),
+    })));
+
     // /**
     //  * Trainers
     //  */
