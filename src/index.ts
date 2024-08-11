@@ -15,7 +15,7 @@ import { createContext } from "./context";
 
 import { WorkerEntrypoint } from "cloudflare:workers";
 
-import { getUserPermissions, appendToDatabase, updateDatabase } from './utils';
+import { getUserPermissions, appendToDatabase, updateDatabase, getFromDatabase } from './utils';
 
 export interface Env {
     "fitness-db": Hyperdrive;
@@ -186,18 +186,37 @@ export default class extends WorkerEntrypoint {
     /**
      * Create a new program in the database
      */
-    async createProgram() {
+    async createProgram(userId: string) {
         let context = this._createContext();
         let db = context.db;
 
         // Add a new program to the database
-        return await appendToDatabase({
+        const program = await appendToDatabase({
             table: 'Program',
             data: {
                 name: 'New Program',
             },
             db
         });
+
+        // Get the trainerId from the user
+        const user = await getFromDatabase({
+            table: 'User',
+            key: userId,
+            db
+        });
+
+        // Add the program to the trainer's list of programs
+        await appendToDatabase({
+            table: 'TrainerProgram',
+            data: {
+                trainerId: user.trainerId,
+                programId: program.id
+            },
+            db
+        });
+
+        return program;
 
     }
     /**

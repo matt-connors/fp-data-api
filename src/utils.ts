@@ -70,3 +70,16 @@ export const appendToDatabase = ({ table, data, db }: { table: string, data: { [
         console.error(`Error appending to the database: ${error}`);
         return null;
     });
+
+/**
+ * Get a record from the database
+ */
+export const getFromDatabase = ({ table, key, db }: { table: string, key: string, db: any }) => db
+    .selectFrom(table)
+    .selectAll()
+    .where('id', '=', key)
+    .executeTakeFirst()
+    .catch((error: any) => {
+        console.error(`Error getting from the database: ${error}`);
+        return null;
+    });
