@@ -101,12 +101,12 @@ model Exercise {
 
 model Program {
     id               Int               @id @default(autoincrement())
-    type             ProgramType
-    name             String
-    description      String
+    type             ProgramType?
+    name             String?
+    description      String?
     trainerPrograms  TrainerProgram[]
     createdAt        DateTime          @default(now())
-    updatedAt        DateTime          @updatedAt
+    updatedAt        DateTime?         @updatedAt
     programExercises ProgramExercise[]
     userPrograms     UserProgram[]
 

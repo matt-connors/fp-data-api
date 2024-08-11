@@ -42,11 +42,11 @@ export type PermissionToRole = {
 };
 export type Program = {
     id: Generated<number>;
-    type: ProgramType;
-    name: string;
-    description: string;
+    type: ProgramType | null;
+    name: string | null;
+    description: string | null;
     createdAt: Generated<Timestamp>;
-    updatedAt: Timestamp;
+    updatedAt: Timestamp | null;
 };
 export type ProgramExercise = {
     programId: number;
