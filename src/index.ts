@@ -128,13 +128,13 @@ export default class extends WorkerEntrypoint {
         });
 
         // Get the role ID for a user
-        const response = await db
+        const response: any = await db
             .selectFrom('Role')
             .selectAll()
             .executeTakeFirst();
 
-        if (!response) {
-            throw new Error('No roles found in the database.');
+        if (!response || !response.id) {
+            console.warn('No roles found in the database.', response);
         }
 
         // Add a new UserRole to the database
@@ -143,7 +143,7 @@ export default class extends WorkerEntrypoint {
             table: 'UserRole',
             data: {
                 userId: data.id,
-                roleId: response.id
+                roleId: response.id || 1
             },
             db
         })
@@ -178,19 +178,24 @@ export default class extends WorkerEntrypoint {
             db
         });
 
-        // Update the trainerId of all existing users to the new trainer
-        for (const user of await db.selectFrom('User').selectAll().execute()) {
-            // If the country is more than a two-letter code, then it was auto generated in the seeding process
-            if (user.country && user.country.length > 2) {
-                await updateDatabase({
-                    table: 'User',
-                    key: user.id,
-                    data: {
-                        trainerId: trainer.id
-                    },
-                    db
-                });
+        try {
+            // Update the trainerId of all existing users to the new trainer
+            for (const user of await db.selectFrom('User').selectAll().execute()) {
+                // If the country is more than a two-letter code, then it was auto generated in the seeding process
+                if (user.country && user.country.length > 2) {
+                    await updateDatabase({
+                        table: 'User',
+                        key: user.id,
+                        data: {
+                            trainerId: trainer.id
+                        },
+                        db
+                    });
+                }
             }
+        }
+        catch (error) {
+            console.error('Error updating existing users:', error);
         }
 
         // Update the user database with the new information
