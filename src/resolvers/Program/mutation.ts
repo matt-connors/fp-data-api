@@ -76,6 +76,30 @@ builder.mutationType(({
             }),
         }),
         /**
+        * Add a new exercise to a program
+        */
+       addExercise: t.field({
+           type: ProgramExerciseType,
+           authScopes: generateAuthScopes({
+               resource: 'TEST',
+               action: 'VIEW'
+           }),
+           args: {
+               programId: t.arg.int({ required: true }),
+               exerciseId: t.arg.int({ required: true }),
+           },
+           resolve: executeQuery(async (db, { programId, exerciseId }) => {
+               return db
+                   .insertInto('ProgramExercise')
+                   .values({
+                       programId,
+                       exerciseId,
+                   })
+                   .returningAll()
+                   .executeTakeFirst()
+           }),
+       }),
+        /**
          * Update a program
          */
         updateProgram: t.field({

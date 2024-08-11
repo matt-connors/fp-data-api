@@ -33,19 +33,8 @@ const yoga = createYoga<Env>({
         }),
         // See https://the-guild.dev/graphql/yoga-server/docs/features/response-caching
         useResponseCache({
-            // cache based on the authentication header
-            // session: (request: Request) => request.headers.get('authorization'),
             session: () => null,
-            // by default cache all operations for 2 seconds
-            ttl: 2_000,
-            ttlPerType: {
-                // only cache query operations containing User for 500ms
-                Project: 0,
-            },
-            ttlPerSchemaCoordinate: {
-                // cache operations selecting Query.lazy for 10 seconds
-                // 'Query.lazy': 10_000
-            }
+            ttl: 0,
         }),
         costLimitPlugin({
             maxCost: 5000,              // Default: 5000
@@ -67,19 +56,7 @@ const yoga = createYoga<Env>({
             n: 15,
             allowList: []
         })
-        // useJWT({
-        //     issuer: 'http://graphql-yoga.com',
-        //     signingKey: process.env.JWT_SECRET
-        // })
     ],
-    // cors: {
-    //     origin: '*',
-    //     methods: ['GET', 'POST', 'OPTIONS'],
-    //     // allowedHeaders: ['Content-Type', 'Authorization'],
-    //     // exposedHeaders: ['Content-Range', 'X-Content-Range'],
-    //     // credentials: true,
-    //     maxAge: 86400,
-    // },
     logging: logger,
     schema,
     context: async (context) => {
@@ -87,9 +64,8 @@ const yoga = createYoga<Env>({
         if (!userId) {
             return context;
         }
-        // TODO: REPLACE '1' with userId
         const permissions = await getUserPermissions(userId, context.db) || [];
-        console.log('(permissions) --->', permissions);
+        // add the permissions and userId to the context
         return {
             ...context,
             permissions,

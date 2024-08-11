@@ -118,7 +118,7 @@ model ProgramExercise {
     exercise   Exercise @relation(fields: [exerciseId], references: [id])
     programId  Int
     exerciseId Int
-    order      Int // Position of the exercise in the program
+    order      Int? // Position of the exercise in the program
     sets       Int?
     reps       Int?
     duration   Int? // in seconds, if applicable

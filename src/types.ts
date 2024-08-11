@@ -51,7 +51,7 @@ export type Program = {
 export type ProgramExercise = {
     programId: number;
     exerciseId: number;
-    order: number;
+    order: number | null;
     sets: number | null;
     reps: number | null;
     duration: number | null;
