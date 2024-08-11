@@ -127,13 +127,22 @@ export default class extends WorkerEntrypoint {
             db
         });
 
+        const response = await db
+            .selectFrom('Role')
+            .selectAll()
+            .executeTakeFirst();
+
+        if (!response) {
+            throw new Error('No roles found in the database.');
+        }
+
         // Add a new UserRole to the database
         // Note that this must be done sequentially in order to reference the new user's ID
         await appendToDatabase({
             table: 'UserRole',
             data: {
                 userId: data.id,
-                roleId: 12 // TODO: manually add a default role for testing
+                roleId: response.id
             },
             db
         })

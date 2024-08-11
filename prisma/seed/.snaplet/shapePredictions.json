@@ -381,6 +381,20 @@
   },
   {
     "schemaName": "auth",
+    "tableName": "mfa_challenges",
+    "predictions": [
+      {
+        "input": "auth mfa_challenges otp_code",
+        "column": "otp_code",
+        "shape": "PASSWORD",
+        "confidence": 0.8065078854560852,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      }
+    ]
+  },
+  {
+    "schemaName": "auth",
     "tableName": "mfa_factors",
     "predictions": [
       {
@@ -388,6 +402,14 @@
         "column": "friendly_name",
         "shape": "PERSON_FULL_NAME",
         "confidence": 0.959611177444458,
+        "context": "GENERAL",
+        "confidenceContext": 0
+      },
+      {
+        "input": "auth mfa_factors phone",
+        "column": "phone",
+        "shape": "PHONE_NUMBER",
+        "confidence": 0.9076438546180725,
         "context": "GENERAL",
         "confidenceContext": 0
       },
